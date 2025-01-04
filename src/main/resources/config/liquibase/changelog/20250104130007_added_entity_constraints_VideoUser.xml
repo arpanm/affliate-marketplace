@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity VideoUser.
+    -->
+    <changeSet id="20250104130007-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="bank_id"
+                                 baseTableName="video_user"
+                                 constraintName="fk_video_user__bank_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="bank_details"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="video_user_id"
+                                 baseTableName="rel_video_user__affinity_vectors"
+                                 constraintName="fk_rel_video_user__affinity_vectors__video_user_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="video_user"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="affinity_vectors_id"
+                                 baseTableName="rel_video_user__affinity_vectors"
+                                 constraintName="fk_rel_video_user__affinity_vectors__affinity_vectors_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="affinity"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="company_id"
+                                 baseTableName="video_user"
+                                 constraintName="fk_video_user__company_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="sponsor"
+                                 />
+    </changeSet>
+</databaseChangeLog>

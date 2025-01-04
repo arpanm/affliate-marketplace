@@ -1,0 +1,33 @@
+{
+  "affliateMarketplaceApp": {
+    "aiTool": {
+      "home": {
+        "title": "AiTools",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Ai Tool बनाएँ",
+        "createOrEditLabel": "Ai Tool बनाएँ या संपादित करें",
+        "notFound": "No Ai Tools found"
+      },
+      "created": "एक नया Ai Tool [identifier: {{ param }}] तैयार है",
+      "updated": "एक Ai Tool [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Ai Tool [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Ai Tool [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Ai Tool"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "vendor": "Vendor",
+      "linkUrl": "Link Url",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "aiSessions": "Ai Sessions"
+    }
+  }
+}

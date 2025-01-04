@@ -1,0 +1,100 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130018"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "isLiked",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isSkipped",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isDisliked",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isWatched",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isFullyWatched",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isReported",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "rating",
+      "fieldType": "Long",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMax": "5",
+      "fieldValidateRulesMin": "1"
+    },
+    {
+      "fieldName": "comment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "reportReason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isBlocked",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isModerated",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "Review",
+  "relationships": [
+    {
+      "otherEntityName": "reviewChangeHistory",
+      "otherEntityRelationshipName": "review",
+      "relationshipName": "changesHistory",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "videoUser",
+      "otherEntityRelationshipName": "reviews",
+      "relationshipName": "reviewer",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "videoPost",
+      "otherEntityRelationshipName": "reviews",
+      "relationshipName": "post",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

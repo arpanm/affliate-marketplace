@@ -1,0 +1,77 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130020"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "changeType",
+      "fieldType": "ChangeType",
+      "fieldValues": "ModeratorUpdateContent,ModeratorUpdateActiveStatus,UserUpdateContent,UserUpdateUrl,UserChangeActiveStatus"
+    },
+    {
+      "fieldName": "oldtitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oldDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oldUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oldUrlType",
+      "fieldType": "UrlType",
+      "fieldValues": "YouTube,Instagram,LocalVideoUpload"
+    },
+    {
+      "fieldName": "oldIsAIGenerated",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldIsPremium",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldIsBlocked",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldIsModerated",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldIsActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldCreatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oldCreatedOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "oldUpdatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oldUpdatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "VideoPostChangeHistory",
+  "relationships": [
+    {
+      "otherEntityName": "videoPost",
+      "otherEntityRelationshipName": "changesHistory",
+      "relationshipName": "post",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "prize": {
+      "home": {
+        "title": "Prizes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Prize",
+        "createOrEditLabel": "Create or edit a Prize",
+        "notFound": "No Prizes found"
+      },
+      "created": "A new Prize is created with identifier {{ param }}",
+      "updated": "A Prize is updated with identifier {{ param }}",
+      "deleted": "A Prize is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Prize {{ id }}?"
+      },
+      "detail": {
+        "title": "Prize"
+      },
+      "id": "ID",
+      "prizeType": "Prize Type",
+      "prizeTag": "Prize Tag",
+      "prizeDetails": "Prize Details",
+      "prizeValueType": "Prize Value Type",
+      "prizeValue": "Prize Value",
+      "countOfPossibleWinners": "Count Of Possible Winners",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "winners": "Winners",
+      "competition": "Competition"
+    }
+  }
+}

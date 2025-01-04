@@ -1,0 +1,137 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130013"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "CompetitionPaymentStatus",
+      "fieldValues": "PaymentPendingFromSponsor,PaymentReceivedFromSponsor,PartialPaymentReceivedFromSponsor,PaymentRemittedToWinners"
+    },
+    {
+      "fieldName": "isBlocked",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "blockReason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "blockedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isPaused",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "pauseReason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pausedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "banner1Url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "banner2Url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "banner3Url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "startDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "endDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "landingUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "totalPrizeValue",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "invoiceToSponsorUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tncUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "tnc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "Competition",
+  "relationships": [
+    {
+      "otherEntityName": "prize",
+      "otherEntityRelationshipName": "competition",
+      "relationshipName": "prizes",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "competitionPaymentFromSponsor",
+      "otherEntityRelationshipName": "competition",
+      "relationshipName": "paymentsFromSponsor",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "sponsor",
+      "otherEntityRelationshipName": "sponsoredCompetitions",
+      "relationshipName": "sponsor",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "videoPost",
+      "otherEntityRelationshipName": "competition",
+      "relationshipName": "competitionPosts",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

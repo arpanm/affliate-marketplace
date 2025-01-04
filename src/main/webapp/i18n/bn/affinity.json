@@ -1,0 +1,32 @@
+{
+  "affliateMarketplaceApp": {
+    "affinity": {
+      "home": {
+        "title": "Affinities",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Affinity",
+        "createOrEditLabel": "Create or edit a Affinity",
+        "notFound": "No Affinities found"
+      },
+      "created": "A new Affinity is created with identifier {{ param }}",
+      "updated": "A Affinity is updated with identifier {{ param }}",
+      "deleted": "A Affinity is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Affinity {{ id }}?"
+      },
+      "detail": {
+        "title": "Affinity"
+      },
+      "id": "ID",
+      "segment": "Segment",
+      "score": "Score",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "posts": "Posts",
+      "users": "Users"
+    }
+  }
+}

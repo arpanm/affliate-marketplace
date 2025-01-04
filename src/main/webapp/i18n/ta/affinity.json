@@ -1,0 +1,32 @@
+{
+  "affliateMarketplaceApp": {
+    "affinity": {
+      "home": {
+        "title": "Affinities",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Affinity-ஐ உருவாக்கு",
+        "createOrEditLabel": "Affinity -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Affinities found"
+      },
+      "created": "Affinity புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Affinity மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Affinity நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Affinity {{ id }}?"
+      },
+      "detail": {
+        "title": "Affinity"
+      },
+      "id": "ID",
+      "segment": "Segment",
+      "score": "Score",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "posts": "Posts",
+      "users": "Users"
+    }
+  }
+}

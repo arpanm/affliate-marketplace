@@ -1,0 +1,9 @@
+{
+  "affliateMarketplaceApp": {
+    "TransactionStatus": {
+      "null": "",
+      "Initiated": "Initiated",
+      "Received": "Received"
+    }
+  }
+}

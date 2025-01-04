@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "videoTag": {
+      "home": {
+        "title": "Video Tags",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Video Tag  సృష్టించండి",
+        "createOrEditLabel": "Video Tag సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Video Tags found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Video Tag సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Video Tag సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Video Tag తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Video Tag {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Video Tag"
+      },
+      "id": "ID",
+      "name": "Name",
+      "code": "Code",
+      "isModerated": "Is Moderated",
+      "isDeleted": "Is Deleted",
+      "deletionReason": "Deletion Reason",
+      "mergedWithTagName": "Merged With Tag Name",
+      "mergedWithTagCode": "Merged With Tag Code",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "posts": "Posts"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "competitionPaymentFromSponsor": {
+      "home": {
+        "title": "CompetitionPaymentFromSponsors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Competition Payment From Sponsor बनाएँ",
+        "createOrEditLabel": "Competition Payment From Sponsor बनाएँ या संपादित करें",
+        "notFound": "No Competition Payment From Sponsors found"
+      },
+      "created": "एक नया Competition Payment From Sponsor [identifier: {{ param }}] तैयार है",
+      "updated": "एक Competition Payment From Sponsor [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Competition Payment From Sponsor [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Competition Payment From Sponsor [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Competition Payment From Sponsor"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "transactionId": "Transaction Id",
+      "transactionScreenshotUrl": "Transaction Screenshot Url",
+      "transactionDate": "Transaction Date",
+      "transactionStatus": "Transaction Status",
+      "paidBy": "Paid By",
+      "paymentReceiptUrl": "Payment Receipt Url",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "competition": "Competition"
+    }
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "affliateMarketplaceApp": {
+    "videoPostChangeHistory": {
+      "home": {
+        "title": "Video Post Change Histories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Video Post Change History-ஐ உருவாக்கு",
+        "createOrEditLabel": "Video Post Change History -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Video Post Change Histories found"
+      },
+      "created": "Video Post Change History புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Video Post Change History மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Video Post Change History நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Video Post Change History {{ id }}?"
+      },
+      "detail": {
+        "title": "Video Post Change History"
+      },
+      "id": "ID",
+      "changeType": "Change Type",
+      "oldtitle": "Oldtitle",
+      "oldDescription": "Old Description",
+      "oldUrl": "Old Url",
+      "oldUrlType": "Old Url Type",
+      "oldIsAIGenerated": "Old Is AI Generated",
+      "oldIsPremium": "Old Is Premium",
+      "oldIsBlocked": "Old Is Blocked",
+      "oldIsModerated": "Old Is Moderated",
+      "oldIsActive": "Old Is Active",
+      "oldCreatedBy": "Old Created By",
+      "oldCreatedOn": "Old Created On",
+      "oldUpdatedBy": "Old Updated By",
+      "oldUpdatedOn": "Old Updated On",
+      "post": "Post"
+    }
+  }
+}

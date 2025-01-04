@@ -1,0 +1,72 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130014"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "prizeType",
+      "fieldType": "PrizeType",
+      "fieldValues": "Individual,Group"
+    },
+    {
+      "fieldName": "prizeTag",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prizeDetails",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prizeValueType",
+      "fieldType": "PrizeValueType",
+      "fieldValues": "Money,Other"
+    },
+    {
+      "fieldName": "prizeValue",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "countOfPossibleWinners",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "Prize",
+  "relationships": [
+    {
+      "otherEntityName": "competitionWinner",
+      "otherEntityRelationshipName": "competitionPrize",
+      "relationshipName": "winners",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "competition",
+      "otherEntityRelationshipName": "prizes",
+      "relationshipName": "competition",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

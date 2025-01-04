@@ -1,0 +1,72 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130023"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "isPaymentLinkGenerated",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isPaid",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isVideoGenerated",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "AiToolSession",
+  "relationships": [
+    {
+      "otherEntityName": "aiToolChat",
+      "otherEntityRelationshipName": "session",
+      "relationshipName": "chats",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "aiToolPayment",
+      "otherEntityRelationshipName": "session",
+      "relationshipName": "payments",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "videoUser",
+      "otherEntityRelationshipName": "aiSessions",
+      "relationshipName": "user",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "aiTool",
+      "otherEntityRelationshipName": "aiSessions",
+      "relationshipName": "tool",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

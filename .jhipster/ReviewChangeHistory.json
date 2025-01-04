@@ -1,0 +1,91 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130021"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "changeType",
+      "fieldType": "ChangeType",
+      "fieldValues": "ModeratorUpdateContent,ModeratorUpdateActiveStatus,UserUpdateContent,UserUpdateUrl,UserChangeActiveStatus"
+    },
+    {
+      "fieldName": "oldIsLiked",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldIsSkipped",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldIsDisliked",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldIsWatched",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldIsFullyWatched",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldIsReported",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldRating",
+      "fieldType": "Long",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMax": "5",
+      "fieldValidateRulesMin": "1"
+    },
+    {
+      "fieldName": "oldComment",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oldReportReason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oldIsBlocked",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldIsModerated",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldIsActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "oldCreatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oldCreatedOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "oldUpdatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "oldUpdatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "ReviewChangeHistory",
+  "relationships": [
+    {
+      "otherEntityName": "review",
+      "otherEntityRelationshipName": "changesHistory",
+      "relationshipName": "review",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

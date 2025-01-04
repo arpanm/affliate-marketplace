@@ -1,0 +1,41 @@
+{
+  "affliateMarketplaceApp": {
+    "reviewChangeHistory": {
+      "home": {
+        "title": "ReviewChangeHistories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Review Change History बनाएँ",
+        "createOrEditLabel": "Review Change History बनाएँ या संपादित करें",
+        "notFound": "No Review Change Histories found"
+      },
+      "created": "एक नया Review Change History [identifier: {{ param }}] तैयार है",
+      "updated": "एक Review Change History [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Review Change History [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Review Change History [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Review Change History"
+      },
+      "id": "ID",
+      "changeType": "Change Type",
+      "oldIsLiked": "Old Is Liked",
+      "oldIsSkipped": "Old Is Skipped",
+      "oldIsDisliked": "Old Is Disliked",
+      "oldIsWatched": "Old Is Watched",
+      "oldIsFullyWatched": "Old Is Fully Watched",
+      "oldIsReported": "Old Is Reported",
+      "oldRating": "Old Rating",
+      "oldComment": "Old Comment",
+      "oldReportReason": "Old Report Reason",
+      "oldIsBlocked": "Old Is Blocked",
+      "oldIsModerated": "Old Is Moderated",
+      "oldIsActive": "Old Is Active",
+      "oldCreatedBy": "Old Created By",
+      "oldCreatedOn": "Old Created On",
+      "oldUpdatedBy": "Old Updated By",
+      "oldUpdatedOn": "Old Updated On",
+      "review": "Review"
+    }
+  }
+}

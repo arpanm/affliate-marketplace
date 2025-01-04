@@ -1,0 +1,35 @@
+{
+  "affliateMarketplaceApp": {
+    "aiToolChat": {
+      "home": {
+        "title": "Ai Tool Chats",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Ai Tool Chat  సృష్టించండి",
+        "createOrEditLabel": "Ai Tool Chat సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Ai Tool Chats found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Ai Tool Chat సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Ai Tool Chat సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Ai Tool Chat తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Ai Tool Chat {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Ai Tool Chat"
+      },
+      "id": "ID",
+      "message": "Message",
+      "videoUrl": "Video Url",
+      "paymentUrl": "Payment Url",
+      "type": "Type",
+      "isFinalVidel": "Is Final Videl",
+      "isDownloaded": "Is Downloaded",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "session": "Session"
+    }
+  }
+}

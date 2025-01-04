@@ -1,0 +1,11 @@
+{
+  "affliateMarketplaceApp": {
+    "VideoUserType": {
+      "null": "",
+      "SuperAdmin": "SuperAdmin",
+      "Moderator": "Moderator",
+      "CorporateAdmin": "CorporateAdmin",
+      "NormalUser": "NormalUser"
+    }
+  }
+}

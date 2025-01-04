@@ -1,0 +1,37 @@
+{
+  "affliateMarketplaceApp": {
+    "sponsor": {
+      "home": {
+        "title": "Sponsors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Sponsor बनाएँ",
+        "createOrEditLabel": "Sponsor बनाएँ या संपादित करें",
+        "notFound": "No Sponsors found"
+      },
+      "created": "एक नया Sponsor [identifier: {{ param }}] तैयार है",
+      "updated": "एक Sponsor [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Sponsor [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Sponsor [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Sponsor"
+      },
+      "id": "ID",
+      "sponsorName": "Sponsor Name",
+      "sponsorDescription": "Sponsor Description",
+      "sponsorBanner1Url": "Sponsor Banner 1 Url",
+      "sponsorBanner2Url": "Sponsor Banner 2 Url",
+      "sponsorBanner3Url": "Sponsor Banner 3 Url",
+      "sponsorExternalUrl": "Sponsor External Url",
+      "sponsorLogoUrl": "Sponsor Logo Url",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "adminUsers": "Admin Users",
+      "sponsoredCompetitions": "Sponsored Competitions"
+    }
+  }
+}

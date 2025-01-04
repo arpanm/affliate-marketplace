@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "prize": {
+      "home": {
+        "title": "Prizes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Prize बनाएँ",
+        "createOrEditLabel": "Prize बनाएँ या संपादित करें",
+        "notFound": "No Prizes found"
+      },
+      "created": "एक नया Prize [identifier: {{ param }}] तैयार है",
+      "updated": "एक Prize [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Prize [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Prize [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Prize"
+      },
+      "id": "ID",
+      "prizeType": "Prize Type",
+      "prizeTag": "Prize Tag",
+      "prizeDetails": "Prize Details",
+      "prizeValueType": "Prize Value Type",
+      "prizeValue": "Prize Value",
+      "countOfPossibleWinners": "Count Of Possible Winners",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "winners": "Winners",
+      "competition": "Competition"
+    }
+  }
+}

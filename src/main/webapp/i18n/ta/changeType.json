@@ -1,0 +1,12 @@
+{
+  "affliateMarketplaceApp": {
+    "ChangeType": {
+      "null": "",
+      "ModeratorUpdateContent": "ModeratorUpdateContent",
+      "ModeratorUpdateActiveStatus": "ModeratorUpdateActiveStatus",
+      "UserUpdateContent": "UserUpdateContent",
+      "UserUpdateUrl": "UserUpdateUrl",
+      "UserChangeActiveStatus": "UserChangeActiveStatus"
+    }
+  }
+}

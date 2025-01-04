@@ -1,0 +1,12 @@
+{
+  "affliateMarketplaceApp": {
+    "ChatType": {
+      "null": "",
+      "UserMessage": "UserMessage",
+      "AiResponse": "AiResponse",
+      "GeneratedVideo": "GeneratedVideo",
+      "PaymentRequest": "PaymentRequest",
+      "PaymentStatus": "PaymentStatus"
+    }
+  }
+}

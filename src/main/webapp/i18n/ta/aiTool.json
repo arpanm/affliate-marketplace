@@ -1,0 +1,33 @@
+{
+  "affliateMarketplaceApp": {
+    "aiTool": {
+      "home": {
+        "title": "Ai Tools",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Ai Tool-ஐ உருவாக்கு",
+        "createOrEditLabel": "Ai Tool -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Ai Tools found"
+      },
+      "created": "Ai Tool புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Ai Tool மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Ai Tool நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Ai Tool {{ id }}?"
+      },
+      "detail": {
+        "title": "Ai Tool"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "vendor": "Vendor",
+      "linkUrl": "Link Url",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "aiSessions": "Ai Sessions"
+    }
+  }
+}

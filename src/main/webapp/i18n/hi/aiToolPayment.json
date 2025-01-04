@@ -1,0 +1,39 @@
+{
+  "affliateMarketplaceApp": {
+    "aiToolPayment": {
+      "home": {
+        "title": "AiToolPayments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Ai Tool Payment बनाएँ",
+        "createOrEditLabel": "Ai Tool Payment बनाएँ या संपादित करें",
+        "notFound": "No Ai Tool Payments found"
+      },
+      "created": "एक नया Ai Tool Payment [identifier: {{ param }}] तैयार है",
+      "updated": "एक Ai Tool Payment [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Ai Tool Payment [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Ai Tool Payment [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Ai Tool Payment"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "status": "Status",
+      "paymentLinkUrl": "Payment Link Url",
+      "pgType": "Pg Type",
+      "pgId": "Pg Id",
+      "pgStatus": "Pg Status",
+      "pgRequestJson": "Pg Request Json",
+      "pgResponseJson": "Pg Response Json",
+      "pgRequestTimeStamp": "Pg Request Time Stamp",
+      "pgResponseTimeStamp": "Pg Response Time Stamp",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "session": "Session"
+    }
+  }
+}

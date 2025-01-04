@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "prize": {
+      "home": {
+        "title": "Prizes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Prize  సృష్టించండి",
+        "createOrEditLabel": "Prize సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Prizes found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Prize సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Prize సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Prize తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Prize {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Prize"
+      },
+      "id": "ID",
+      "prizeType": "Prize Type",
+      "prizeTag": "Prize Tag",
+      "prizeDetails": "Prize Details",
+      "prizeValueType": "Prize Value Type",
+      "prizeValue": "Prize Value",
+      "countOfPossibleWinners": "Count Of Possible Winners",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "winners": "Winners",
+      "competition": "Competition"
+    }
+  }
+}

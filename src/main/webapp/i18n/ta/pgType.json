@@ -1,0 +1,10 @@
+{
+  "affliateMarketplaceApp": {
+    "PgType": {
+      "null": "",
+      "RazorPay": "RazorPay",
+      "PayU": "PayU",
+      "PayTM": "PayTM"
+    }
+  }
+}

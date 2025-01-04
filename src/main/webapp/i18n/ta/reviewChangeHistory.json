@@ -1,0 +1,41 @@
+{
+  "affliateMarketplaceApp": {
+    "reviewChangeHistory": {
+      "home": {
+        "title": "Review Change Histories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Review Change History-ஐ உருவாக்கு",
+        "createOrEditLabel": "Review Change History -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Review Change Histories found"
+      },
+      "created": "Review Change History புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Review Change History மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Review Change History நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Review Change History {{ id }}?"
+      },
+      "detail": {
+        "title": "Review Change History"
+      },
+      "id": "ID",
+      "changeType": "Change Type",
+      "oldIsLiked": "Old Is Liked",
+      "oldIsSkipped": "Old Is Skipped",
+      "oldIsDisliked": "Old Is Disliked",
+      "oldIsWatched": "Old Is Watched",
+      "oldIsFullyWatched": "Old Is Fully Watched",
+      "oldIsReported": "Old Is Reported",
+      "oldRating": "Old Rating",
+      "oldComment": "Old Comment",
+      "oldReportReason": "Old Report Reason",
+      "oldIsBlocked": "Old Is Blocked",
+      "oldIsModerated": "Old Is Moderated",
+      "oldIsActive": "Old Is Active",
+      "oldCreatedBy": "Old Created By",
+      "oldCreatedOn": "Old Created On",
+      "oldUpdatedBy": "Old Updated By",
+      "oldUpdatedOn": "Old Updated On",
+      "review": "Review"
+    }
+  }
+}

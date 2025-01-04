@@ -1,0 +1,35 @@
+{
+  "affliateMarketplaceApp": {
+    "aiToolChat": {
+      "home": {
+        "title": "Ai Tool Chats",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Ai Tool Chat",
+        "createOrEditLabel": "Create or edit a Ai Tool Chat",
+        "notFound": "No Ai Tool Chats found"
+      },
+      "created": "A new Ai Tool Chat is created with identifier {{ param }}",
+      "updated": "A Ai Tool Chat is updated with identifier {{ param }}",
+      "deleted": "A Ai Tool Chat is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ai Tool Chat {{ id }}?"
+      },
+      "detail": {
+        "title": "Ai Tool Chat"
+      },
+      "id": "ID",
+      "message": "Message",
+      "videoUrl": "Video Url",
+      "paymentUrl": "Payment Url",
+      "type": "Type",
+      "isFinalVidel": "Is Final Videl",
+      "isDownloaded": "Is Downloaded",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "session": "Session"
+    }
+  }
+}

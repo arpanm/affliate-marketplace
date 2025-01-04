@@ -1,0 +1,9 @@
+{
+  "affliateMarketplaceApp": {
+    "PrizeValueType": {
+      "null": "",
+      "Money": "Money",
+      "Other": "Other"
+    }
+  }
+}

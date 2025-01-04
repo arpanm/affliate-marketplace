@@ -1,0 +1,42 @@
+{
+  "affliateMarketplaceApp": {
+    "review": {
+      "home": {
+        "title": "Reviews",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Review  సృష్టించండి",
+        "createOrEditLabel": "Review సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Reviews found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Review సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Review సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Review తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Review {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Review"
+      },
+      "id": "ID",
+      "isLiked": "Is Liked",
+      "isSkipped": "Is Skipped",
+      "isDisliked": "Is Disliked",
+      "isWatched": "Is Watched",
+      "isFullyWatched": "Is Fully Watched",
+      "isReported": "Is Reported",
+      "rating": "Rating",
+      "comment": "Comment",
+      "reportReason": "Report Reason",
+      "isBlocked": "Is Blocked",
+      "isModerated": "Is Moderated",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "changesHistory": "Changes History",
+      "reviewer": "Reviewer",
+      "post": "Post"
+    }
+  }
+}

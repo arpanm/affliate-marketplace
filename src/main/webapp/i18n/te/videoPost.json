@@ -1,0 +1,43 @@
+{
+  "affliateMarketplaceApp": {
+    "videoPost": {
+      "home": {
+        "title": "Video Posts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Video Post  సృష్టించండి",
+        "createOrEditLabel": "Video Post సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Video Posts found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Video Post సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Video Post సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Video Post తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Video Post {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Video Post"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "url": "Url",
+      "urlType": "Url Type",
+      "isAIGenerated": "Is AI Generated",
+      "isPremium": "Is Premium",
+      "isBlocked": "Is Blocked",
+      "isModerated": "Is Moderated",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "reviews": "Reviews",
+      "changesHistory": "Changes History",
+      "competition": "Competition",
+      "tags": "Tags",
+      "affinityVectors": "Affinity Vectors",
+      "competitionWinner": "Competition Winner",
+      "creator": "Creator"
+    }
+  }
+}
