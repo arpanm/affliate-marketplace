@@ -1,0 +1,34 @@
+{
+  "affliateMarketplaceApp": {
+    "bankDetails": {
+      "home": {
+        "title": "Bank Details",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Bank Details-ஐ உருவாக்கு",
+        "createOrEditLabel": "Bank Details -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Bank Details found"
+      },
+      "created": "Bank Details புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Bank Details மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Bank Details நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Bank Details {{ id }}?"
+      },
+      "detail": {
+        "title": "Bank Details"
+      },
+      "id": "ID",
+      "accountName": "Account Name",
+      "accountNo": "Account No",
+      "bankName": "Bank Name",
+      "ifsc": "Ifsc",
+      "proofUrl": "Proof Url",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "user": "User"
+    }
+  }
+}

@@ -1,0 +1,62 @@
+{
+  "annotations": {
+    "changelogDate": "20250104125547"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "message",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isContactViewed",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isFollowed",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isDeleted",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "Contact",
+  "relationships": [
+    {
+      "otherEntityName": "videoUser",
+      "otherEntityRelationshipName": "contactsMade",
+      "relationshipName": "sender",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "videoUser",
+      "otherEntityRelationshipName": "contactsReceived",
+      "relationshipName": "receiver",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}
