@@ -1,0 +1,35 @@
+{
+  "affliateMarketplaceApp": {
+    "aiToolSession": {
+      "home": {
+        "title": "AiToolSessions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Ai Tool Session बनाएँ",
+        "createOrEditLabel": "Ai Tool Session बनाएँ या संपादित करें",
+        "notFound": "No Ai Tool Sessions found"
+      },
+      "created": "एक नया Ai Tool Session [identifier: {{ param }}] तैयार है",
+      "updated": "एक Ai Tool Session [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Ai Tool Session [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Ai Tool Session [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Ai Tool Session"
+      },
+      "id": "ID",
+      "isPaymentLinkGenerated": "Is Payment Link Generated",
+      "isPaid": "Is Paid",
+      "isVideoGenerated": "Is Video Generated",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "chats": "Chats",
+      "payments": "Payments",
+      "user": "User",
+      "tool": "Tool"
+    }
+  }
+}

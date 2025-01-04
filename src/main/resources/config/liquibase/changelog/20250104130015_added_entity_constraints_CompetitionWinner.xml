@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<databaseChangeLog
+    xmlns="http://www.liquibase.org/xml/ns/dbchangelog"
+    xmlns:ext="http://www.liquibase.org/xml/ns/dbchangelog-ext"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.liquibase.org/xml/ns/dbchangelog http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-latest.xsd
+                        http://www.liquibase.org/xml/ns/dbchangelog-ext http://www.liquibase.org/xml/ns/dbchangelog/dbchangelog-ext.xsd">
+    <!--
+        Added the constraints for entity CompetitionWinner.
+    -->
+    <changeSet id="20250104130015-2" author="jhipster">
+
+        <addForeignKeyConstraint baseColumnNames="winning_post_id"
+                                 baseTableName="competition_winner"
+                                 constraintName="fk_competition_winner__winning_post_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="video_post"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="payment_to_winner_id"
+                                 baseTableName="competition_winner"
+                                 constraintName="fk_competition_winner__payment_to_winner_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="competition_payment_to_winner"
+                                 />
+
+        <addForeignKeyConstraint baseColumnNames="competition_prize_id"
+                                 baseTableName="competition_winner"
+                                 constraintName="fk_competition_winner__competition_prize_id"
+                                 referencedColumnNames="id"
+                                 referencedTableName="prize"
+                                 />
+    </changeSet>
+</databaseChangeLog>

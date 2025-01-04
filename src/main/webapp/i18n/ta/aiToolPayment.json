@@ -1,0 +1,39 @@
+{
+  "affliateMarketplaceApp": {
+    "aiToolPayment": {
+      "home": {
+        "title": "Ai Tool Payments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Ai Tool Payment-ஐ உருவாக்கு",
+        "createOrEditLabel": "Ai Tool Payment -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Ai Tool Payments found"
+      },
+      "created": "Ai Tool Payment புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Ai Tool Payment மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Ai Tool Payment நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Ai Tool Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Ai Tool Payment"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "status": "Status",
+      "paymentLinkUrl": "Payment Link Url",
+      "pgType": "Pg Type",
+      "pgId": "Pg Id",
+      "pgStatus": "Pg Status",
+      "pgRequestJson": "Pg Request Json",
+      "pgResponseJson": "Pg Response Json",
+      "pgRequestTimeStamp": "Pg Request Time Stamp",
+      "pgResponseTimeStamp": "Pg Response Time Stamp",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "session": "Session"
+    }
+  }
+}

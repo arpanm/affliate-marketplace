@@ -1,0 +1,32 @@
+{
+  "affliateMarketplaceApp": {
+    "affinity": {
+      "home": {
+        "title": "Affinities",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Affinity बनाएँ",
+        "createOrEditLabel": "Affinity बनाएँ या संपादित करें",
+        "notFound": "No Affinities found"
+      },
+      "created": "एक नया Affinity [identifier: {{ param }}] तैयार है",
+      "updated": "एक Affinity [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Affinity [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Affinity [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Affinity"
+      },
+      "id": "ID",
+      "segment": "Segment",
+      "score": "Score",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "posts": "Posts",
+      "users": "Users"
+    }
+  }
+}

@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "competitionPaymentFromSponsor": {
+      "home": {
+        "title": "Competition Payment From Sponsors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Competition Payment From Sponsor  సృష్టించండి",
+        "createOrEditLabel": "Competition Payment From Sponsor సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Competition Payment From Sponsors found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Competition Payment From Sponsor సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Competition Payment From Sponsor సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Competition Payment From Sponsor తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Competition Payment From Sponsor {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Competition Payment From Sponsor"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "transactionId": "Transaction Id",
+      "transactionScreenshotUrl": "Transaction Screenshot Url",
+      "transactionDate": "Transaction Date",
+      "transactionStatus": "Transaction Status",
+      "paidBy": "Paid By",
+      "paymentReceiptUrl": "Payment Receipt Url",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "competition": "Competition"
+    }
+  }
+}

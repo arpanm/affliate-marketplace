@@ -1,0 +1,114 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130010"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "title",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "urlType",
+      "fieldType": "UrlType",
+      "fieldValues": "YouTube,Instagram,LocalVideoUpload"
+    },
+    {
+      "fieldName": "isAIGenerated",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isPremium",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isBlocked",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isModerated",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "VideoPost",
+  "relationships": [
+    {
+      "otherEntityName": "review",
+      "otherEntityRelationshipName": "post",
+      "relationshipName": "reviews",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "videoPostChangeHistory",
+      "otherEntityRelationshipName": "post",
+      "relationshipName": "changesHistory",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "competition",
+      "otherEntityRelationshipName": "competitionPosts",
+      "relationshipName": "competition",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "videoTag",
+      "otherEntityRelationshipName": "posts",
+      "relationshipName": "tags",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "affinity",
+      "otherEntityRelationshipName": "posts",
+      "relationshipName": "affinityVectors",
+      "relationshipSide": "left",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "competitionWinner",
+      "otherEntityRelationshipName": "winningPost",
+      "relationshipName": "competitionWinner",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "videoUser",
+      "otherEntityRelationshipName": "posts",
+      "relationshipName": "creator",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

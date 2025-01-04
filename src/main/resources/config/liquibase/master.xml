@@ -17,7 +17,39 @@
     <property name="datetimeType" value="datetime(6)" dbms="mysql"/>
 
     <include file="config/liquibase/changelog/00000000000000_initial_schema.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130007_added_entity_VideoUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130008_added_entity_BankDetails.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130009_added_entity_Contact.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130010_added_entity_VideoPost.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130011_added_entity_VideoTag.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130012_added_entity_Sponsor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130013_added_entity_Competition.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130014_added_entity_Prize.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130015_added_entity_CompetitionWinner.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130016_added_entity_CompetitionPaymentFromSponsor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130017_added_entity_CompetitionPaymentToWinner.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130018_added_entity_Review.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130019_added_entity_Affinity.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130020_added_entity_VideoPostChangeHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130021_added_entity_ReviewChangeHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130022_added_entity_AiTool.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130023_added_entity_AiToolSession.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130024_added_entity_AiToolChat.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130025_added_entity_AiToolPayment.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-changelog - JHipster will add liquibase changelogs here -->
+    <include file="config/liquibase/changelog/20250104130007_added_entity_constraints_VideoUser.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130009_added_entity_constraints_Contact.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130010_added_entity_constraints_VideoPost.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130013_added_entity_constraints_Competition.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130014_added_entity_constraints_Prize.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130015_added_entity_constraints_CompetitionWinner.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130016_added_entity_constraints_CompetitionPaymentFromSponsor.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130018_added_entity_constraints_Review.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130020_added_entity_constraints_VideoPostChangeHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130021_added_entity_constraints_ReviewChangeHistory.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130023_added_entity_constraints_AiToolSession.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130024_added_entity_constraints_AiToolChat.xml" relativeToChangelogFile="false"/>
+    <include file="config/liquibase/changelog/20250104130025_added_entity_constraints_AiToolPayment.xml" relativeToChangelogFile="false"/>
     <!-- jhipster-needle-liquibase-add-constraints-changelog - JHipster will add liquibase constraints changelogs here -->
     <!-- jhipster-needle-liquibase-add-incremental-changelog - JHipster will add incremental liquibase changelogs here -->
 </databaseChangeLog>

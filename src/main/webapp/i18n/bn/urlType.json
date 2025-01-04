@@ -1,0 +1,10 @@
+{
+  "affliateMarketplaceApp": {
+    "UrlType": {
+      "null": "",
+      "YouTube": "YouTube",
+      "Instagram": "Instagram",
+      "LocalVideoUpload": "LocalVideoUpload"
+    }
+  }
+}

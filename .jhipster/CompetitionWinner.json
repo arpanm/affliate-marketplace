@@ -1,0 +1,73 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130015"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "prizeTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "citation",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "certificateUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "selectionReason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "CompetitionWinner",
+  "relationships": [
+    {
+      "otherEntityName": "videoPost",
+      "otherEntityRelationshipName": "competitionWinner",
+      "relationshipName": "winningPost",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "competitionPaymentToWinner",
+      "otherEntityRelationshipName": "winner",
+      "relationshipName": "paymentToWinner",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "prize",
+      "otherEntityRelationshipName": "winners",
+      "relationshipName": "competitionPrize",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

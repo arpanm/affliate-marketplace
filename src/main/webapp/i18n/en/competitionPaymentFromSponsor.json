@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "competitionPaymentFromSponsor": {
+      "home": {
+        "title": "Competition Payment From Sponsors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Competition Payment From Sponsor",
+        "createOrEditLabel": "Create or edit a Competition Payment From Sponsor",
+        "notFound": "No Competition Payment From Sponsors found"
+      },
+      "created": "A new Competition Payment From Sponsor is created with identifier {{ param }}",
+      "updated": "A Competition Payment From Sponsor is updated with identifier {{ param }}",
+      "deleted": "A Competition Payment From Sponsor is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Competition Payment From Sponsor {{ id }}?"
+      },
+      "detail": {
+        "title": "Competition Payment From Sponsor"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "transactionId": "Transaction Id",
+      "transactionScreenshotUrl": "Transaction Screenshot Url",
+      "transactionDate": "Transaction Date",
+      "transactionStatus": "Transaction Status",
+      "paidBy": "Paid By",
+      "paymentReceiptUrl": "Payment Receipt Url",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "competition": "Competition"
+    }
+  }
+}

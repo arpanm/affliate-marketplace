@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "prize": {
+      "home": {
+        "title": "Prizes",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Prize-ஐ உருவாக்கு",
+        "createOrEditLabel": "Prize -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Prizes found"
+      },
+      "created": "Prize புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Prize மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Prize நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Prize {{ id }}?"
+      },
+      "detail": {
+        "title": "Prize"
+      },
+      "id": "ID",
+      "prizeType": "Prize Type",
+      "prizeTag": "Prize Tag",
+      "prizeDetails": "Prize Details",
+      "prizeValueType": "Prize Value Type",
+      "prizeValue": "Prize Value",
+      "countOfPossibleWinners": "Count Of Possible Winners",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "winners": "Winners",
+      "competition": "Competition"
+    }
+  }
+}

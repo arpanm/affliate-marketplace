@@ -1,0 +1,42 @@
+{
+  "affliateMarketplaceApp": {
+    "review": {
+      "home": {
+        "title": "Reviews",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Review बनाएँ",
+        "createOrEditLabel": "Review बनाएँ या संपादित करें",
+        "notFound": "No Reviews found"
+      },
+      "created": "एक नया Review [identifier: {{ param }}] तैयार है",
+      "updated": "एक Review [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Review [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Review [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Review"
+      },
+      "id": "ID",
+      "isLiked": "Is Liked",
+      "isSkipped": "Is Skipped",
+      "isDisliked": "Is Disliked",
+      "isWatched": "Is Watched",
+      "isFullyWatched": "Is Fully Watched",
+      "isReported": "Is Reported",
+      "rating": "Rating",
+      "comment": "Comment",
+      "reportReason": "Report Reason",
+      "isBlocked": "Is Blocked",
+      "isModerated": "Is Moderated",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "changesHistory": "Changes History",
+      "reviewer": "Reviewer",
+      "post": "Post"
+    }
+  }
+}

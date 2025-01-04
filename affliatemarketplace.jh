@@ -25,7 +25,7 @@ enum VideoUserType {
 }
 
 entity BankDetails {
-	name String
+	accountName String
     accountNo String
     bankName String
     ifsc String
@@ -38,7 +38,7 @@ entity BankDetails {
 }
 
 relationship OneToOne {
-	VideoUser to BankDetails{user}
+	VideoUser{bank} to BankDetails{user}
 }
 
 entity Contact {
@@ -53,12 +53,12 @@ entity Contact {
     updatedOn LocalDate
 }
 
-relationship OneToOne {
-	Contact{sender} to VideoUser
+relationship ManyToOne {
+	Contact{sender} to VideoUser{contactsMade}
 }
 
-relationship OneToOne {
-	Contact{receiver} to VideoUser
+relationship ManyToOne {
+	Contact{receiver} to VideoUser{contactsReceived}
 }
 
 entity VideoPost {
@@ -84,7 +84,7 @@ enum UrlType {
 }
 
 relationship OneToMany {
-	VideoUser to VideoPost{creator}
+	VideoUser{posts} to VideoPost{creator}
 }
 
 entity VideoTag {
@@ -122,7 +122,7 @@ entity Sponsor {
 }
 
 relationship OneToMany {
-	Sponsor to VideoUser{company}
+	Sponsor{adminUsers} to VideoUser{company}
 }
 
 entity Competition {
@@ -172,11 +172,11 @@ enum CompetitionPaymentStatus {
 }
 
 relationship OneToMany {
-	Sponsor to Competition{sponsor}
+	Sponsor{sponsoredCompetitions} to Competition{sponsor}
 }
 
 relationship ManyToOne {
-	VideoPost{competition} to Competition
+	VideoPost{competition} to Competition{competitionPosts}
 }
 
 entity Prize {
@@ -198,13 +198,13 @@ enum PrizeType {
     Group
 }
 
-enum PrizeType {
+enum PrizeValueType {
 	Money,
     Other
 }
 
 relationship OneToMany {
-	Competition to Prize{competition}
+	Competition{prizes} to Prize{competition}
 }
 
 entity CompetitionWinner {
@@ -221,11 +221,11 @@ entity CompetitionWinner {
 }
 
 relationship OneToMany {
-	Prize to CompetitionWinner{competitionPrize}
+	Prize{winners} to CompetitionWinner{competitionPrize}
 }
 
 relationship OneToOne {
-	CompetitionWinner to VideoPost{competition}
+	CompetitionWinner{winningPost} to VideoPost{competitionWinner}
 }
 
 entity CompetitionPaymentFromSponsor {
@@ -249,7 +249,7 @@ enum TransactionStatus {
 }
 
 relationship OneToMany {
-	Competition to CompetitionPaymentFromSponsor{competition}
+	Competition{paymentsFromSponsor} to CompetitionPaymentFromSponsor{competition}
 }
 
 entity CompetitionPaymentToWinner {
@@ -275,7 +275,7 @@ entity CompetitionPaymentToWinner {
 }
 
 relationship OneToOne {
-	CompetitionWinner to CompetitionPaymentToWinner{winner}
+	CompetitionWinner{paymentToWinner} to CompetitionPaymentToWinner{winner}
 }
 
 entity Review {
@@ -327,11 +327,11 @@ enum ReportType {
 }
 
 relationship OneToMany {
-	VideoUser to Review{reviewer}
+	VideoUser{reviews} to Review{reviewer}
 }
 
 relationship OneToMany {
-	VideoPost to Review{post}
+	VideoPost{reviews} to Review{post}
 }
 
 entity Affinity {
@@ -359,8 +359,8 @@ enum Segment {
 }
 
 relationship ManyToMany {
-	VideoPost{affinityVector} to Affinity{posts},
-    VideoUser{affinityVector} to Affinity{users}
+	VideoPost{affinityVectors} to Affinity{posts},
+    VideoUser{affinityVectors} to Affinity{users}
 }
 
 entity VideoPostChangeHistory {
@@ -389,7 +389,7 @@ enum ChangeType {
 }
 
 relationship OneToMany {
-	VideoPost to VideoPostChangeHistory{post}
+	VideoPost{changesHistory} to VideoPostChangeHistory{post}
 }
 
 entity ReviewChangeHistory {
@@ -413,7 +413,7 @@ entity ReviewChangeHistory {
 }
 
 relationship OneToMany {
-	Review to ReviewChangeHistory{review}
+	Review{changesHistory} to ReviewChangeHistory{review}
 }
 
 entity AiTool {
@@ -441,11 +441,11 @@ entity AiToolSession {
 }
 
 relationship OneToMany {
-	VideoUser to AiToolSession{user}
+	VideoUser{aiSessions} to AiToolSession{user}
 }
 
 relationship OneToMany {
-	AiTool to AiToolSession{tool}
+	AiTool{aiSessions} to AiToolSession{tool}
 }
 
 entity AiToolChat {
@@ -471,7 +471,7 @@ enum ChatType {
 }
 
 relationship OneToMany {
-	AiToolSession to AiToolChat{session}
+	AiToolSession{chats} to AiToolChat{session}
 }
 
 entity AiToolPayment {
@@ -506,5 +506,5 @@ enum PaymentStatus {
 }
 
 relationship OneToMany {
-	AiToolSession to AiToolPayment{session}
+	AiToolSession{payments} to AiToolPayment{session}
 }

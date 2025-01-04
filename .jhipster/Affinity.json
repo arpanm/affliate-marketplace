@@ -1,0 +1,55 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130019"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "segment",
+      "fieldType": "Segment",
+      "fieldValues": "A,B,C,D,E,F,G,H,I,J,K"
+    },
+    {
+      "fieldName": "score",
+      "fieldType": "Long"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "Affinity",
+  "relationships": [
+    {
+      "otherEntityName": "videoPost",
+      "otherEntityRelationshipName": "affinityVectors",
+      "relationshipName": "posts",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    },
+    {
+      "otherEntityName": "videoUser",
+      "otherEntityRelationshipName": "affinityVectors",
+      "relationshipName": "users",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

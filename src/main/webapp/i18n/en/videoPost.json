@@ -1,0 +1,43 @@
+{
+  "affliateMarketplaceApp": {
+    "videoPost": {
+      "home": {
+        "title": "Video Posts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Video Post",
+        "createOrEditLabel": "Create or edit a Video Post",
+        "notFound": "No Video Posts found"
+      },
+      "created": "A new Video Post is created with identifier {{ param }}",
+      "updated": "A Video Post is updated with identifier {{ param }}",
+      "deleted": "A Video Post is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Video Post {{ id }}?"
+      },
+      "detail": {
+        "title": "Video Post"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "url": "Url",
+      "urlType": "Url Type",
+      "isAIGenerated": "Is AI Generated",
+      "isPremium": "Is Premium",
+      "isBlocked": "Is Blocked",
+      "isModerated": "Is Moderated",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "reviews": "Reviews",
+      "changesHistory": "Changes History",
+      "competition": "Competition",
+      "tags": "Tags",
+      "affinityVectors": "Affinity Vectors",
+      "competitionWinner": "Competition Winner",
+      "creator": "Creator"
+    }
+  }
+}

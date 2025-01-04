@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "competitionWinner": {
+      "home": {
+        "title": "CompetitionWinners",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Competition Winner बनाएँ",
+        "createOrEditLabel": "Competition Winner बनाएँ या संपादित करें",
+        "notFound": "No Competition Winners found"
+      },
+      "created": "एक नया Competition Winner [identifier: {{ param }}] तैयार है",
+      "updated": "एक Competition Winner [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Competition Winner [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Competition Winner [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Competition Winner"
+      },
+      "id": "ID",
+      "prizeTitle": "Prize Title",
+      "citation": "Citation",
+      "certificateUrl": "Certificate Url",
+      "selectedBy": "Selected By",
+      "selectionReason": "Selection Reason",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "winningPost": "Winning Post",
+      "paymentToWinner": "Payment To Winner",
+      "competitionPrize": "Competition Prize"
+    }
+  }
+}

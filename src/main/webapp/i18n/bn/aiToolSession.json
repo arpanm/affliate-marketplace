@@ -1,0 +1,35 @@
+{
+  "affliateMarketplaceApp": {
+    "aiToolSession": {
+      "home": {
+        "title": "Ai Tool Sessions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Ai Tool Session",
+        "createOrEditLabel": "Create or edit a Ai Tool Session",
+        "notFound": "No Ai Tool Sessions found"
+      },
+      "created": "A new Ai Tool Session is created with identifier {{ param }}",
+      "updated": "A Ai Tool Session is updated with identifier {{ param }}",
+      "deleted": "A Ai Tool Session is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ai Tool Session {{ id }}?"
+      },
+      "detail": {
+        "title": "Ai Tool Session"
+      },
+      "id": "ID",
+      "isPaymentLinkGenerated": "Is Payment Link Generated",
+      "isPaid": "Is Paid",
+      "isVideoGenerated": "Is Video Generated",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "chats": "Chats",
+      "payments": "Payments",
+      "user": "User",
+      "tool": "Tool"
+    }
+  }
+}

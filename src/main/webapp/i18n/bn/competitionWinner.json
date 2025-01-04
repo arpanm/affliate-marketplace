@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "competitionWinner": {
+      "home": {
+        "title": "Competition Winners",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Competition Winner",
+        "createOrEditLabel": "Create or edit a Competition Winner",
+        "notFound": "No Competition Winners found"
+      },
+      "created": "A new Competition Winner is created with identifier {{ param }}",
+      "updated": "A Competition Winner is updated with identifier {{ param }}",
+      "deleted": "A Competition Winner is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Competition Winner {{ id }}?"
+      },
+      "detail": {
+        "title": "Competition Winner"
+      },
+      "id": "ID",
+      "prizeTitle": "Prize Title",
+      "citation": "Citation",
+      "certificateUrl": "Certificate Url",
+      "selectedBy": "Selected By",
+      "selectionReason": "Selection Reason",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "winningPost": "Winning Post",
+      "paymentToWinner": "Payment To Winner",
+      "competitionPrize": "Competition Prize"
+    }
+  }
+}

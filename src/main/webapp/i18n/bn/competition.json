@@ -1,0 +1,51 @@
+{
+  "affliateMarketplaceApp": {
+    "competition": {
+      "home": {
+        "title": "Competitions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Competition",
+        "createOrEditLabel": "Create or edit a Competition",
+        "notFound": "No Competitions found"
+      },
+      "created": "A new Competition is created with identifier {{ param }}",
+      "updated": "A Competition is updated with identifier {{ param }}",
+      "deleted": "A Competition is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Competition {{ id }}?"
+      },
+      "detail": {
+        "title": "Competition"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "status": "Status",
+      "isBlocked": "Is Blocked",
+      "blockReason": "Block Reason",
+      "blockedBy": "Blocked By",
+      "isPaused": "Is Paused",
+      "pauseReason": "Pause Reason",
+      "pausedBy": "Paused By",
+      "banner1Url": "Banner 1 Url",
+      "banner2Url": "Banner 2 Url",
+      "banner3Url": "Banner 3 Url",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "landingUrl": "Landing Url",
+      "totalPrizeValue": "Total Prize Value",
+      "invoiceToSponsorUrl": "Invoice To Sponsor Url",
+      "tncUrl": "Tnc Url",
+      "tnc": "Tnc",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "prizes": "Prizes",
+      "paymentsFromSponsor": "Payments From Sponsor",
+      "sponsor": "Sponsor",
+      "competitionPosts": "Competition Posts"
+    }
+  }
+}

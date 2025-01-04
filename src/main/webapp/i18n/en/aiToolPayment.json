@@ -1,0 +1,39 @@
+{
+  "affliateMarketplaceApp": {
+    "aiToolPayment": {
+      "home": {
+        "title": "Ai Tool Payments",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Ai Tool Payment",
+        "createOrEditLabel": "Create or edit a Ai Tool Payment",
+        "notFound": "No Ai Tool Payments found"
+      },
+      "created": "A new Ai Tool Payment is created with identifier {{ param }}",
+      "updated": "A Ai Tool Payment is updated with identifier {{ param }}",
+      "deleted": "A Ai Tool Payment is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Ai Tool Payment {{ id }}?"
+      },
+      "detail": {
+        "title": "Ai Tool Payment"
+      },
+      "id": "ID",
+      "amount": "Amount",
+      "status": "Status",
+      "paymentLinkUrl": "Payment Link Url",
+      "pgType": "Pg Type",
+      "pgId": "Pg Id",
+      "pgStatus": "Pg Status",
+      "pgRequestJson": "Pg Request Json",
+      "pgResponseJson": "Pg Response Json",
+      "pgRequestTimeStamp": "Pg Request Time Stamp",
+      "pgResponseTimeStamp": "Pg Response Time Stamp",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "session": "Session"
+    }
+  }
+}

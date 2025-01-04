@@ -1,0 +1,43 @@
+{
+  "affliateMarketplaceApp": {
+    "competitionPaymentToWinner": {
+      "home": {
+        "title": "Competition Payment To Winners",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Competition Payment To Winner-ஐ உருவாக்கு",
+        "createOrEditLabel": "Competition Payment To Winner -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Competition Payment To Winners found"
+      },
+      "created": "Competition Payment To Winner புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Competition Payment To Winner மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Competition Payment To Winner நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Competition Payment To Winner {{ id }}?"
+      },
+      "detail": {
+        "title": "Competition Payment To Winner"
+      },
+      "id": "ID",
+      "prizeTitle": "Prize Title",
+      "prizeAmount": "Prize Amount",
+      "tdsAmount": "Tds Amount",
+      "tdsCertificateUrl": "Tds Certificate Url",
+      "otherDeductionAmount": "Other Deduction Amount",
+      "deductionReason": "Deduction Reason",
+      "deductionJsonData": "Deduction Json Data",
+      "deductionCertificateUrl": "Deduction Certificate Url",
+      "paidAmount": "Paid Amount",
+      "transactionId": "Transaction Id",
+      "transactionScreenshotUrl": "Transaction Screenshot Url",
+      "transactionDate": "Transaction Date",
+      "transactionStatus": "Transaction Status",
+      "paidBy": "Paid By",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "winner": "Winner"
+    }
+  }
+}

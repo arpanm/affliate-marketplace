@@ -1,0 +1,68 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130016"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "amount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "transactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionScreenshotUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "transactionStatus",
+      "fieldType": "TransactionStatus",
+      "fieldValues": "Initiated,Received"
+    },
+    {
+      "fieldName": "paidBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paymentReceiptUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "CompetitionPaymentFromSponsor",
+  "relationships": [
+    {
+      "otherEntityName": "competition",
+      "otherEntityRelationshipName": "paymentsFromSponsor",
+      "relationshipName": "competition",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

@@ -1,0 +1,41 @@
+{
+  "affliateMarketplaceApp": {
+    "reviewChangeHistory": {
+      "home": {
+        "title": "Review Change Histories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Review Change History",
+        "createOrEditLabel": "Create or edit a Review Change History",
+        "notFound": "No Review Change Histories found"
+      },
+      "created": "A new Review Change History is created with identifier {{ param }}",
+      "updated": "A Review Change History is updated with identifier {{ param }}",
+      "deleted": "A Review Change History is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Review Change History {{ id }}?"
+      },
+      "detail": {
+        "title": "Review Change History"
+      },
+      "id": "ID",
+      "changeType": "Change Type",
+      "oldIsLiked": "Old Is Liked",
+      "oldIsSkipped": "Old Is Skipped",
+      "oldIsDisliked": "Old Is Disliked",
+      "oldIsWatched": "Old Is Watched",
+      "oldIsFullyWatched": "Old Is Fully Watched",
+      "oldIsReported": "Old Is Reported",
+      "oldRating": "Old Rating",
+      "oldComment": "Old Comment",
+      "oldReportReason": "Old Report Reason",
+      "oldIsBlocked": "Old Is Blocked",
+      "oldIsModerated": "Old Is Moderated",
+      "oldIsActive": "Old Is Active",
+      "oldCreatedBy": "Old Created By",
+      "oldCreatedOn": "Old Created On",
+      "oldUpdatedBy": "Old Updated By",
+      "oldUpdatedOn": "Old Updated On",
+      "review": "Review"
+    }
+  }
+}

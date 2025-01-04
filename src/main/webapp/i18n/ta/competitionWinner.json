@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "competitionWinner": {
+      "home": {
+        "title": "Competition Winners",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Competition Winner-ஐ உருவாக்கு",
+        "createOrEditLabel": "Competition Winner -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Competition Winners found"
+      },
+      "created": "Competition Winner புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Competition Winner மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Competition Winner நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Competition Winner {{ id }}?"
+      },
+      "detail": {
+        "title": "Competition Winner"
+      },
+      "id": "ID",
+      "prizeTitle": "Prize Title",
+      "citation": "Citation",
+      "certificateUrl": "Certificate Url",
+      "selectedBy": "Selected By",
+      "selectionReason": "Selection Reason",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "winningPost": "Winning Post",
+      "paymentToWinner": "Payment To Winner",
+      "competitionPrize": "Competition Prize"
+    }
+  }
+}

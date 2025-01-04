@@ -1,0 +1,81 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130025"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "amount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "status",
+      "fieldType": "PaymentStatus",
+      "fieldValues": "Initiate,PendingOnPg,Success,Failed"
+    },
+    {
+      "fieldName": "paymentLinkUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pgType",
+      "fieldType": "PgType",
+      "fieldValues": "RazorPay,PayU,PayTM"
+    },
+    {
+      "fieldName": "pgId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pgStatus",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pgRequestJson",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pgResponseJson",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pgRequestTimeStamp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "pgResponseTimeStamp",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "AiToolPayment",
+  "relationships": [
+    {
+      "otherEntityName": "aiToolSession",
+      "otherEntityRelationshipName": "payments",
+      "relationshipName": "session",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

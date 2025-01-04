@@ -1,0 +1,9 @@
+{
+  "affliateMarketplaceApp": {
+    "PrizeType": {
+      "null": "",
+      "Individual": "Individual",
+      "Group": "Group"
+    }
+  }
+}

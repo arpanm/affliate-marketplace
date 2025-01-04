@@ -1,0 +1,43 @@
+{
+  "affliateMarketplaceApp": {
+    "competitionPaymentToWinner": {
+      "home": {
+        "title": "Competition Payment To Winners",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Competition Payment To Winner",
+        "createOrEditLabel": "Create or edit a Competition Payment To Winner",
+        "notFound": "No Competition Payment To Winners found"
+      },
+      "created": "A new Competition Payment To Winner is created with identifier {{ param }}",
+      "updated": "A Competition Payment To Winner is updated with identifier {{ param }}",
+      "deleted": "A Competition Payment To Winner is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Competition Payment To Winner {{ id }}?"
+      },
+      "detail": {
+        "title": "Competition Payment To Winner"
+      },
+      "id": "ID",
+      "prizeTitle": "Prize Title",
+      "prizeAmount": "Prize Amount",
+      "tdsAmount": "Tds Amount",
+      "tdsCertificateUrl": "Tds Certificate Url",
+      "otherDeductionAmount": "Other Deduction Amount",
+      "deductionReason": "Deduction Reason",
+      "deductionJsonData": "Deduction Json Data",
+      "deductionCertificateUrl": "Deduction Certificate Url",
+      "paidAmount": "Paid Amount",
+      "transactionId": "Transaction Id",
+      "transactionScreenshotUrl": "Transaction Screenshot Url",
+      "transactionDate": "Transaction Date",
+      "transactionStatus": "Transaction Status",
+      "paidBy": "Paid By",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "winner": "Winner"
+    }
+  }
+}

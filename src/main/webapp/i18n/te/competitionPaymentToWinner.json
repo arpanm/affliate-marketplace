@@ -1,0 +1,43 @@
+{
+  "affliateMarketplaceApp": {
+    "competitionPaymentToWinner": {
+      "home": {
+        "title": "Competition Payment To Winners",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Competition Payment To Winner  సృష్టించండి",
+        "createOrEditLabel": "Competition Payment To Winner సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Competition Payment To Winners found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Competition Payment To Winner సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Competition Payment To Winner సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Competition Payment To Winner తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Competition Payment To Winner {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Competition Payment To Winner"
+      },
+      "id": "ID",
+      "prizeTitle": "Prize Title",
+      "prizeAmount": "Prize Amount",
+      "tdsAmount": "Tds Amount",
+      "tdsCertificateUrl": "Tds Certificate Url",
+      "otherDeductionAmount": "Other Deduction Amount",
+      "deductionReason": "Deduction Reason",
+      "deductionJsonData": "Deduction Json Data",
+      "deductionCertificateUrl": "Deduction Certificate Url",
+      "paidAmount": "Paid Amount",
+      "transactionId": "Transaction Id",
+      "transactionScreenshotUrl": "Transaction Screenshot Url",
+      "transactionDate": "Transaction Date",
+      "transactionStatus": "Transaction Status",
+      "paidBy": "Paid By",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "winner": "Winner"
+    }
+  }
+}

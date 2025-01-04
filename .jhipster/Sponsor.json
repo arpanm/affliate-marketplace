@@ -1,0 +1,74 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130012"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "sponsorName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sponsorDescription",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sponsorBanner1Url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sponsorBanner2Url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sponsorBanner3Url",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sponsorExternalUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "sponsorLogoUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "Sponsor",
+  "relationships": [
+    {
+      "otherEntityName": "videoUser",
+      "otherEntityRelationshipName": "company",
+      "relationshipName": "adminUsers",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "competition",
+      "otherEntityRelationshipName": "sponsor",
+      "relationshipName": "sponsoredCompetitions",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

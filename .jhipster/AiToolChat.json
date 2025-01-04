@@ -1,0 +1,64 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130024"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "message",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "videoUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "paymentUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "type",
+      "fieldType": "ChatType",
+      "fieldValues": "UserMessage,AiResponse,GeneratedVideo,PaymentRequest,PaymentStatus"
+    },
+    {
+      "fieldName": "isFinalVidel",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isDownloaded",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "AiToolChat",
+  "relationships": [
+    {
+      "otherEntityName": "aiToolSession",
+      "otherEntityRelationshipName": "chats",
+      "relationshipName": "session",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

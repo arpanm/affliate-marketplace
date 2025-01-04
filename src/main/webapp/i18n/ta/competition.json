@@ -1,0 +1,51 @@
+{
+  "affliateMarketplaceApp": {
+    "competition": {
+      "home": {
+        "title": "Competitions",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Competition-ஐ உருவாக்கு",
+        "createOrEditLabel": "Competition -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Competitions found"
+      },
+      "created": "Competition புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Competition மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Competition நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Competition {{ id }}?"
+      },
+      "detail": {
+        "title": "Competition"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "status": "Status",
+      "isBlocked": "Is Blocked",
+      "blockReason": "Block Reason",
+      "blockedBy": "Blocked By",
+      "isPaused": "Is Paused",
+      "pauseReason": "Pause Reason",
+      "pausedBy": "Paused By",
+      "banner1Url": "Banner 1 Url",
+      "banner2Url": "Banner 2 Url",
+      "banner3Url": "Banner 3 Url",
+      "startDate": "Start Date",
+      "endDate": "End Date",
+      "landingUrl": "Landing Url",
+      "totalPrizeValue": "Total Prize Value",
+      "invoiceToSponsorUrl": "Invoice To Sponsor Url",
+      "tncUrl": "Tnc Url",
+      "tnc": "Tnc",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "prizes": "Prizes",
+      "paymentsFromSponsor": "Payments From Sponsor",
+      "sponsor": "Sponsor",
+      "competitionPosts": "Competition Posts"
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "affliateMarketplaceApp": {
+    "aiTool": {
+      "home": {
+        "title": "Ai Tools",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Ai Tool  సృష్టించండి",
+        "createOrEditLabel": "Ai Tool సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Ai Tools found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Ai Tool సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Ai Tool సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Ai Tool తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Ai Tool {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Ai Tool"
+      },
+      "id": "ID",
+      "name": "Name",
+      "description": "Description",
+      "vendor": "Vendor",
+      "linkUrl": "Link Url",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "aiSessions": "Ai Sessions"
+    }
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "annotations": {
+    "changelogDate": "20250104130017"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "prizeTitle",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "prizeAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "tdsAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "tdsCertificateUrl",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "otherDeductionAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "deductionReason",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deductionJsonData",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "deductionCertificateUrl",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "paidAmount",
+      "fieldType": "Double"
+    },
+    {
+      "fieldName": "transactionId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionScreenshotUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "transactionDate",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "transactionStatus",
+      "fieldType": "TransactionStatus",
+      "fieldValues": "Initiated,Received"
+    },
+    {
+      "fieldName": "paidBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "CompetitionPaymentToWinner",
+  "relationships": [
+    {
+      "otherEntityName": "competitionWinner",
+      "otherEntityRelationshipName": "paymentToWinner",
+      "relationshipName": "winner",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

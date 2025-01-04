@@ -1,0 +1,41 @@
+{
+  "affliateMarketplaceApp": {
+    "reviewChangeHistory": {
+      "home": {
+        "title": "Review Change Histories",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Review Change History  సృష్టించండి",
+        "createOrEditLabel": "Review Change History సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Review Change Histories found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Review Change History సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Review Change History సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Review Change History తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Review Change History {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Review Change History"
+      },
+      "id": "ID",
+      "changeType": "Change Type",
+      "oldIsLiked": "Old Is Liked",
+      "oldIsSkipped": "Old Is Skipped",
+      "oldIsDisliked": "Old Is Disliked",
+      "oldIsWatched": "Old Is Watched",
+      "oldIsFullyWatched": "Old Is Fully Watched",
+      "oldIsReported": "Old Is Reported",
+      "oldRating": "Old Rating",
+      "oldComment": "Old Comment",
+      "oldReportReason": "Old Report Reason",
+      "oldIsBlocked": "Old Is Blocked",
+      "oldIsModerated": "Old Is Moderated",
+      "oldIsActive": "Old Is Active",
+      "oldCreatedBy": "Old Created By",
+      "oldCreatedOn": "Old Created On",
+      "oldUpdatedBy": "Old Updated By",
+      "oldUpdatedOn": "Old Updated On",
+      "review": "Review"
+    }
+  }
+}

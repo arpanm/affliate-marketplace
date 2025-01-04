@@ -1,0 +1,42 @@
+{
+  "affliateMarketplaceApp": {
+    "review": {
+      "home": {
+        "title": "Reviews",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Review",
+        "createOrEditLabel": "Create or edit a Review",
+        "notFound": "No Reviews found"
+      },
+      "created": "A new Review is created with identifier {{ param }}",
+      "updated": "A Review is updated with identifier {{ param }}",
+      "deleted": "A Review is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Review {{ id }}?"
+      },
+      "detail": {
+        "title": "Review"
+      },
+      "id": "ID",
+      "isLiked": "Is Liked",
+      "isSkipped": "Is Skipped",
+      "isDisliked": "Is Disliked",
+      "isWatched": "Is Watched",
+      "isFullyWatched": "Is Fully Watched",
+      "isReported": "Is Reported",
+      "rating": "Rating",
+      "comment": "Comment",
+      "reportReason": "Report Reason",
+      "isBlocked": "Is Blocked",
+      "isModerated": "Is Moderated",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "changesHistory": "Changes History",
+      "reviewer": "Reviewer",
+      "post": "Post"
+    }
+  }
+}

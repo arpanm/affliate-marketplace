@@ -1,0 +1,11 @@
+{
+  "affliateMarketplaceApp": {
+    "PaymentStatus": {
+      "null": "",
+      "Initiate": "Initiate",
+      "PendingOnPg": "PendingOnPg",
+      "Success": "Success",
+      "Failed": "Failed"
+    }
+  }
+}

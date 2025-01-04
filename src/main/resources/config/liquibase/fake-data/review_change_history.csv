@@ -1,0 +1,11 @@
+id;change_type;old_is_liked;old_is_skipped;old_is_disliked;old_is_watched;old_is_fully_watched;old_is_reported;old_rating;old_comment;old_report_reason;old_is_blocked;old_is_moderated;old_is_active;old_created_by;old_created_on;old_updated_by;old_updated_on
+1;ModeratorUpdateActiveStatus;true;true;true;true;true;false;5;worth since;finally concerned;false;true;true;twist er;2025-01-04;premier unsung that;2025-01-03
+2;UserUpdateContent;true;true;true;false;true;true;5;at aside natural;usually;false;true;true;phew;2025-01-04;yearly;2025-01-03
+3;ModeratorUpdateActiveStatus;true;false;true;true;true;false;5;boohoo though aftermath;galoshes till pluck;true;true;false;duh by willing;2025-01-03;daddy excellent porter;2025-01-04
+4;UserUpdateContent;true;true;false;false;true;true;4;overheard onto;gradient;true;true;false;oddly;2025-01-04;besides communicate;2025-01-03
+5;ModeratorUpdateContent;false;false;false;false;true;false;2;liberalize radiant;and knowledgeably;true;false;true;surprisingly fondly wherever;2025-01-04;blind damp ah;2025-01-04
+6;UserUpdateUrl;true;true;true;false;true;true;4;circa besides;mushy robust athletic;false;true;false;unnecessarily that or;2025-01-03;upon boohoo license;2025-01-03
+7;UserUpdateContent;true;false;true;true;false;false;1;inspect;pivot furthermore finally;true;false;true;questionably;2025-01-03;pacemaker before dial;2025-01-03
+8;ModeratorUpdateActiveStatus;true;true;false;true;true;false;5;pant;down till red;true;false;true;regarding what fooey;2025-01-03;emerge;2025-01-03
+9;UserChangeActiveStatus;true;false;true;true;true;false;3;actual since save;bank;true;true;false;incomparable scramble;2025-01-03;direct gracefully;2025-01-03
+10;ModeratorUpdateActiveStatus;false;true;false;true;false;false;3;fooey out;finally newsstand;false;false;true;smoothly finally;2025-01-04;now;2025-01-04
