@@ -1,0 +1,40 @@
+{
+  "affliateMarketplaceApp": {
+    "videoUser": {
+      "home": {
+        "title": "Video Users",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Video User  సృష్టించండి",
+        "createOrEditLabel": "Video User సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Video Users found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Video User సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Video User సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Video User తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Video User {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Video User"
+      },
+      "id": "ID",
+      "userId": "User Id",
+      "userName": "User Name",
+      "name": "Name",
+      "phone": "Phone",
+      "email": "Email",
+      "description": "Description",
+      "imageUrl": "Image Url",
+      "userType": "User Type",
+      "isBlocked": "Is Blocked",
+      "blockedTill": "Blocked Till",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "bank": "Bank",
+      "contactsMade": "Contacts Made"
+    }
+  }
+}
