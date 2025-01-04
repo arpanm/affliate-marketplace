@@ -1,0 +1,34 @@
+{
+  "affliateMarketplaceApp": {
+    "bankDetails": {
+      "home": {
+        "title": "BankDetails",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Bank Details बनाएँ",
+        "createOrEditLabel": "Bank Details बनाएँ या संपादित करें",
+        "notFound": "No Bank Details found"
+      },
+      "created": "एक नया Bank Details [identifier: {{ param }}] तैयार है",
+      "updated": "एक Bank Details [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Bank Details [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Bank Details [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Bank Details"
+      },
+      "id": "ID",
+      "accountName": "Account Name",
+      "accountNo": "Account No",
+      "bankName": "Bank Name",
+      "ifsc": "Ifsc",
+      "proofUrl": "Proof Url",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "user": "User"
+    }
+  }
+}

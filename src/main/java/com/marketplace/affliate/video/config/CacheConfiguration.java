@@ -50,6 +50,8 @@ public class CacheConfiguration {
             createCache(cm, com.marketplace.affliate.video.domain.User.class.getName());
             createCache(cm, com.marketplace.affliate.video.domain.Authority.class.getName());
             createCache(cm, com.marketplace.affliate.video.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.marketplace.affliate.video.domain.VideoUser.class.getName());
+            createCache(cm, com.marketplace.affliate.video.domain.BankDetails.class.getName());
             // jhipster-needle-ehcache-add-entry
         };
     }
