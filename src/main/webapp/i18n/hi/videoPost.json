@@ -1,0 +1,38 @@
+{
+  "affliateMarketplaceApp": {
+    "videoPost": {
+      "home": {
+        "title": "VideoPosts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Video Post बनाएँ",
+        "createOrEditLabel": "Video Post बनाएँ या संपादित करें",
+        "notFound": "No Video Posts found"
+      },
+      "created": "एक नया Video Post [identifier: {{ param }}] तैयार है",
+      "updated": "एक Video Post [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Video Post [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Video Post [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Video Post"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "url": "Url",
+      "urlType": "Url Type",
+      "isAIGenerated": "Is AI Generated",
+      "isPremium": "Is Premium",
+      "isBlocked": "Is Blocked",
+      "isModerated": "Is Moderated",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "tags": "Tags",
+      "creator": "Creator"
+    }
+  }
+}

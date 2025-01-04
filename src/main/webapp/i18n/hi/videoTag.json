@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "videoTag": {
+      "home": {
+        "title": "VideoTags",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "नया Video Tag बनाएँ",
+        "createOrEditLabel": "Video Tag बनाएँ या संपादित करें",
+        "notFound": "No Video Tags found"
+      },
+      "created": "एक नया Video Tag [identifier: {{ param }}] तैयार है",
+      "updated": "एक Video Tag [identifier: {{ param }}] का अद्यतन हुआ है",
+      "deleted": "Video Tag [identifier: {{ param }}] हटा दिया है",
+      "delete": {
+        "question": "Video Tag [id: {{ id }}] हटाने की पुष्टि करें"
+      },
+      "detail": {
+        "title": "Video Tag"
+      },
+      "id": "ID",
+      "name": "Name",
+      "code": "Code",
+      "isModerated": "Is Moderated",
+      "isDeleted": "Is Deleted",
+      "deletionReason": "Deletion Reason",
+      "mergedWithTagName": "Merged With Tag Name",
+      "mergedWithTagCode": "Merged With Tag Code",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "posts": "Posts"
+    }
+  }
+}

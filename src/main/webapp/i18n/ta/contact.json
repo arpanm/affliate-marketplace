@@ -1,0 +1,34 @@
+{
+  "affliateMarketplaceApp": {
+    "contact": {
+      "home": {
+        "title": "Contacts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Contact-ஐ உருவாக்கு",
+        "createOrEditLabel": "Contact -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Contacts found"
+      },
+      "created": "Contact புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Contact மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Contact நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Contact {{ id }}?"
+      },
+      "detail": {
+        "title": "Contact"
+      },
+      "id": "ID",
+      "message": "Message",
+      "isContactViewed": "Is Contact Viewed",
+      "isFollowed": "Is Followed",
+      "isDeleted": "Is Deleted",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "sender": "Sender",
+      "receiver": "Receiver"
+    }
+  }
+}

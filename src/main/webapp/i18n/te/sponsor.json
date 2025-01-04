@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "sponsor": {
+      "home": {
+        "title": "Sponsors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "కొత్త Sponsor  సృష్టించండి",
+        "createOrEditLabel": "Sponsor సృష్టించండి లేదా సవరించండి",
+        "notFound": "No Sponsors found"
+      },
+      "created": "{{ param }} ఐడీ తో ఒక కొత్త Sponsor సృష్టించబడినది",
+      "updated": "{{ param }} ఐడీ తో ఒక కొత్త Sponsor సవరించబడినది",
+      "deleted": "{{ param }} ఐడీ తో ఒక కొత్త Sponsor తొలగించబడినది",
+      "delete": {
+        "question": "మీరు Sponsor {{ id }} ఖచ్చితంగా తొలగించాలనుకుంటున్నారా?"
+      },
+      "detail": {
+        "title": "Sponsor"
+      },
+      "id": "ID",
+      "sponsorName": "Sponsor Name",
+      "sponsorDescription": "Sponsor Description",
+      "sponsorBanner1Url": "Sponsor Banner 1 Url",
+      "sponsorBanner2Url": "Sponsor Banner 2 Url",
+      "sponsorBanner3Url": "Sponsor Banner 3 Url",
+      "sponsorExternalUrl": "Sponsor External Url",
+      "sponsorLogoUrl": "Sponsor Logo Url",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "adminUsers": "Admin Users"
+    }
+  }
+}

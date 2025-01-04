@@ -1,0 +1,59 @@
+{
+  "annotations": {
+    "changelogDate": "20250104125716"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "accountName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "accountNo",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "bankName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "ifsc",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "proofUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "BankDetails",
+  "relationships": [
+    {
+      "otherEntityName": "videoUser",
+      "otherEntityRelationshipName": "bank",
+      "relationshipName": "user",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-one"
+    }
+  ],
+  "searchEngine": "no"
+}

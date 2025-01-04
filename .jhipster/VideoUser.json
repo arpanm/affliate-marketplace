@@ -1,0 +1,113 @@
+{
+  "annotations": {
+    "changelogDate": "20250104125715"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "userId",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "phone",
+      "fieldType": "Long",
+      "fieldValidateRules": ["min", "max"],
+      "fieldValidateRulesMax": "9999999999",
+      "fieldValidateRulesMin": "1000000000"
+    },
+    {
+      "fieldName": "email",
+      "fieldType": "String",
+      "fieldValidateRules": ["pattern"],
+      "fieldValidateRulesPattern": "^(.+)@(.+)$"
+    },
+    {
+      "fieldName": "description",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "imageUrl",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "userType",
+      "fieldType": "VideoUserType",
+      "fieldValues": "SuperAdmin,Moderator,CorporateAdmin,NormalUser"
+    },
+    {
+      "fieldName": "isBlocked",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "blockedTill",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "VideoUser",
+  "relationships": [
+    {
+      "otherEntityName": "bankDetails",
+      "otherEntityRelationshipName": "user",
+      "relationshipName": "bank",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-one"
+    },
+    {
+      "otherEntityName": "videoPost",
+      "otherEntityRelationshipName": "creator",
+      "relationshipName": "posts",
+      "relationshipSide": "left",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "sponsor",
+      "otherEntityRelationshipName": "adminUsers",
+      "relationshipName": "company",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-one"
+    },
+    {
+      "otherEntityName": "contact",
+      "otherEntityRelationshipName": "sender",
+      "relationshipName": "contactsMade",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    },
+    {
+      "otherEntityName": "contact",
+      "otherEntityRelationshipName": "receiver",
+      "relationshipName": "contactsReceived",
+      "relationshipSide": "right",
+      "relationshipType": "one-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

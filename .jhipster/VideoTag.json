@@ -1,0 +1,67 @@
+{
+  "annotations": {
+    "changelogDate": "20250104125719"
+  },
+  "applications": "*",
+  "fields": [
+    {
+      "fieldName": "name",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "code",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isModerated",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "isDeleted",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "deletionReason",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "mergedWithTagName",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "mergedWithTagCode",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "isActive",
+      "fieldType": "Boolean"
+    },
+    {
+      "fieldName": "createdBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "createdOn",
+      "fieldType": "LocalDate"
+    },
+    {
+      "fieldName": "updatedBy",
+      "fieldType": "String"
+    },
+    {
+      "fieldName": "updatedOn",
+      "fieldType": "LocalDate"
+    }
+  ],
+  "name": "VideoTag",
+  "relationships": [
+    {
+      "otherEntityName": "videoPost",
+      "otherEntityRelationshipName": "tags",
+      "relationshipName": "posts",
+      "relationshipSide": "right",
+      "relationshipType": "many-to-many"
+    }
+  ],
+  "searchEngine": "no"
+}

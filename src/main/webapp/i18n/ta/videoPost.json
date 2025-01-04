@@ -1,0 +1,38 @@
+{
+  "affliateMarketplaceApp": {
+    "videoPost": {
+      "home": {
+        "title": "Video Posts",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Video Post-ஐ உருவாக்கு",
+        "createOrEditLabel": "Video Post -ஐ மாற்று (அ) உருவாக்கு",
+        "notFound": "No Video Posts found"
+      },
+      "created": "Video Post புதிதாக உருவாக்கப்பட்டது, அடையாளம் {{ param }}",
+      "updated": "Video Post மாற்றப்பட்டது, அடையாளம்  {{ param }}",
+      "deleted": "A Video Post நீக்கப்பட்டது, அடையாளம {{ param }}",
+      "delete": {
+        "question": "நீக்குவதற்கு உறுதி செய் Video Post {{ id }}?"
+      },
+      "detail": {
+        "title": "Video Post"
+      },
+      "id": "ID",
+      "title": "Title",
+      "description": "Description",
+      "url": "Url",
+      "urlType": "Url Type",
+      "isAIGenerated": "Is AI Generated",
+      "isPremium": "Is Premium",
+      "isBlocked": "Is Blocked",
+      "isModerated": "Is Moderated",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "tags": "Tags",
+      "creator": "Creator"
+    }
+  }
+}

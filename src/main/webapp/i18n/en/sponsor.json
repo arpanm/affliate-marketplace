@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "sponsor": {
+      "home": {
+        "title": "Sponsors",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Sponsor",
+        "createOrEditLabel": "Create or edit a Sponsor",
+        "notFound": "No Sponsors found"
+      },
+      "created": "A new Sponsor is created with identifier {{ param }}",
+      "updated": "A Sponsor is updated with identifier {{ param }}",
+      "deleted": "A Sponsor is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Sponsor {{ id }}?"
+      },
+      "detail": {
+        "title": "Sponsor"
+      },
+      "id": "ID",
+      "sponsorName": "Sponsor Name",
+      "sponsorDescription": "Sponsor Description",
+      "sponsorBanner1Url": "Sponsor Banner 1 Url",
+      "sponsorBanner2Url": "Sponsor Banner 2 Url",
+      "sponsorBanner3Url": "Sponsor Banner 3 Url",
+      "sponsorExternalUrl": "Sponsor External Url",
+      "sponsorLogoUrl": "Sponsor Logo Url",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "adminUsers": "Admin Users"
+    }
+  }
+}

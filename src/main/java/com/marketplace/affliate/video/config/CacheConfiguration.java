@@ -50,6 +50,18 @@ public class CacheConfiguration {
             createCache(cm, com.marketplace.affliate.video.domain.User.class.getName());
             createCache(cm, com.marketplace.affliate.video.domain.Authority.class.getName());
             createCache(cm, com.marketplace.affliate.video.domain.User.class.getName() + ".authorities");
+            createCache(cm, com.marketplace.affliate.video.domain.VideoUser.class.getName());
+            createCache(cm, com.marketplace.affliate.video.domain.VideoUser.class.getName() + ".posts");
+            createCache(cm, com.marketplace.affliate.video.domain.VideoUser.class.getName() + ".contactsMades");
+            createCache(cm, com.marketplace.affliate.video.domain.VideoUser.class.getName() + ".contactsReceiveds");
+            createCache(cm, com.marketplace.affliate.video.domain.BankDetails.class.getName());
+            createCache(cm, com.marketplace.affliate.video.domain.Contact.class.getName());
+            createCache(cm, com.marketplace.affliate.video.domain.VideoPost.class.getName());
+            createCache(cm, com.marketplace.affliate.video.domain.VideoPost.class.getName() + ".tags");
+            createCache(cm, com.marketplace.affliate.video.domain.VideoTag.class.getName());
+            createCache(cm, com.marketplace.affliate.video.domain.VideoTag.class.getName() + ".posts");
+            createCache(cm, com.marketplace.affliate.video.domain.Sponsor.class.getName());
+            createCache(cm, com.marketplace.affliate.video.domain.Sponsor.class.getName() + ".adminUsers");
             // jhipster-needle-ehcache-add-entry
         };
     }

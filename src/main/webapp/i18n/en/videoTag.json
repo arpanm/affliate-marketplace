@@ -1,0 +1,36 @@
+{
+  "affliateMarketplaceApp": {
+    "videoTag": {
+      "home": {
+        "title": "Video Tags",
+        "refreshListLabel": "Refresh list",
+        "createLabel": "Create a new Video Tag",
+        "createOrEditLabel": "Create or edit a Video Tag",
+        "notFound": "No Video Tags found"
+      },
+      "created": "A new Video Tag is created with identifier {{ param }}",
+      "updated": "A Video Tag is updated with identifier {{ param }}",
+      "deleted": "A Video Tag is deleted with identifier {{ param }}",
+      "delete": {
+        "question": "Are you sure you want to delete Video Tag {{ id }}?"
+      },
+      "detail": {
+        "title": "Video Tag"
+      },
+      "id": "ID",
+      "name": "Name",
+      "code": "Code",
+      "isModerated": "Is Moderated",
+      "isDeleted": "Is Deleted",
+      "deletionReason": "Deletion Reason",
+      "mergedWithTagName": "Merged With Tag Name",
+      "mergedWithTagCode": "Merged With Tag Code",
+      "isActive": "Is Active",
+      "createdBy": "Created By",
+      "createdOn": "Created On",
+      "updatedBy": "Updated By",
+      "updatedOn": "Updated On",
+      "posts": "Posts"
+    }
+  }
+}
