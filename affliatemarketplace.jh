@@ -30,6 +30,7 @@ entity BankDetails {
     bankName String
     ifsc String
     proofUrl String
+    upiHandle String
     isActive Boolean
     createdBy String
     createdOn LocalDate
@@ -92,7 +93,7 @@ entity VideoTag {
     code String
     isModerated Boolean
     isDeleted Boolean
-    deletionReason Boolean
+    deletionReason String
     mergedWithTagName String
     mergedWithTagCode String
     isActive Boolean
@@ -129,7 +130,7 @@ entity Competition {
 	title String
     description String
     status CompetitionStatus
-    status CompetitionPaymentStatus
+    paymentStatus CompetitionPaymentStatus
     isBlocked Boolean
     blockReason String
     blockedBy String
@@ -285,6 +286,7 @@ entity Review {
     isWatched Boolean
     isFullyWatched Boolean
     isReported Boolean
+    reportType ReportType
     rating Long min(1) max(5)
     comment String
     reportReason String
@@ -432,7 +434,7 @@ entity AiToolSession {
 	isPaymentLinkGenerated Boolean
 	isPaid Boolean
     isVideoGenerated Boolean
-    isVideoGenerated Boolean
+    isVideoDownloaded Boolean
     isActive Boolean
     createdBy String
     createdOn LocalDate
@@ -453,7 +455,7 @@ entity AiToolChat {
     videoUrl String
     paymentUrl String
     type ChatType
-    isFinalVidel Boolean
+    isFinalVideo Boolean
     isDownloaded Boolean
     isActive Boolean
     createdBy String
