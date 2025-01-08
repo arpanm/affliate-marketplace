@@ -7,7 +7,7 @@ export interface IVideoTag {
   code?: string | null;
   isModerated?: boolean | null;
   isDeleted?: boolean | null;
-  deletionReason?: boolean | null;
+  deletionReason?: string | null;
   mergedWithTagName?: string | null;
   mergedWithTagCode?: string | null;
   isActive?: boolean | null;
@@ -21,6 +21,5 @@ export interface IVideoTag {
 export const defaultValue: Readonly<IVideoTag> = {
   isModerated: false,
   isDeleted: false,
-  deletionReason: false,
   isActive: false,
 };

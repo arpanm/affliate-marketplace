@@ -130,6 +130,9 @@ public class CompetitionResource {
                 if (competition.getStatus() != null) {
                     existingCompetition.setStatus(competition.getStatus());
                 }
+                if (competition.getPaymentStatus() != null) {
+                    existingCompetition.setPaymentStatus(competition.getPaymentStatus());
+                }
                 if (competition.getIsBlocked() != null) {
                     existingCompetition.setIsBlocked(competition.getIsBlocked());
                 }

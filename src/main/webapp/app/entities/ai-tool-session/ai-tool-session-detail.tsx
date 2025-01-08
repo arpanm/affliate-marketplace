@@ -51,6 +51,12 @@ export const AiToolSessionDetail = () => {
           </dt>
           <dd>{aiToolSessionEntity.isVideoGenerated ? 'true' : 'false'}</dd>
           <dt>
+            <span id="isVideoDownloaded">
+              <Translate contentKey="affliateMarketplaceApp.aiToolSession.isVideoDownloaded">Is Video Downloaded</Translate>
+            </span>
+          </dt>
+          <dd>{aiToolSessionEntity.isVideoDownloaded ? 'true' : 'false'}</dd>
+          <dt>
             <span id="isActive">
               <Translate contentKey="affliateMarketplaceApp.aiToolSession.isActive">Is Active</Translate>
             </span>

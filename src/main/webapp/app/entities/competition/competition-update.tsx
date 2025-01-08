@@ -7,6 +7,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { useAppDispatch, useAppSelector } from 'app/config/store';
 
 import { getEntities as getSponsors } from 'app/entities/sponsor/sponsor.reducer';
+import { CompetitionStatus } from 'app/shared/model/enumerations/competition-status.model';
 import { CompetitionPaymentStatus } from 'app/shared/model/enumerations/competition-payment-status.model';
 import { createEntity, getEntity, reset, updateEntity } from './competition.reducer';
 
@@ -23,6 +24,7 @@ export const CompetitionUpdate = () => {
   const loading = useAppSelector(state => state.competition.loading);
   const updating = useAppSelector(state => state.competition.updating);
   const updateSuccess = useAppSelector(state => state.competition.updateSuccess);
+  const competitionStatusValues = Object.keys(CompetitionStatus);
   const competitionPaymentStatusValues = Object.keys(CompetitionPaymentStatus);
 
   const handleClose = () => {
@@ -70,7 +72,8 @@ export const CompetitionUpdate = () => {
     isNew
       ? {}
       : {
-          status: 'PaymentPendingFromSponsor',
+          status: 'Draft',
+          paymentStatus: 'PaymentPendingFromSponsor',
           ...competitionEntity,
           sponsor: competitionEntity?.sponsor?.id,
         };
@@ -119,6 +122,19 @@ export const CompetitionUpdate = () => {
                 id="competition-status"
                 name="status"
                 data-cy="status"
+                type="select"
+              >
+                {competitionStatusValues.map(competitionStatus => (
+                  <option value={competitionStatus} key={competitionStatus}>
+                    {translate(`affliateMarketplaceApp.CompetitionStatus.${competitionStatus}`)}
+                  </option>
+                ))}
+              </ValidatedField>
+              <ValidatedField
+                label={translate('affliateMarketplaceApp.competition.paymentStatus')}
+                id="competition-paymentStatus"
+                name="paymentStatus"
+                data-cy="paymentStatus"
                 type="select"
               >
                 {competitionPaymentStatusValues.map(competitionPaymentStatus => (

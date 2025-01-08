@@ -7,6 +7,7 @@ export interface IAiToolSession {
   isPaymentLinkGenerated?: boolean | null;
   isPaid?: boolean | null;
   isVideoGenerated?: boolean | null;
+  isVideoDownloaded?: boolean | null;
   isActive?: boolean | null;
   createdBy?: string | null;
   createdOn?: dayjs.Dayjs | null;
@@ -20,5 +21,6 @@ export const defaultValue: Readonly<IAiToolSession> = {
   isPaymentLinkGenerated: false,
   isPaid: false,
   isVideoGenerated: false,
+  isVideoDownloaded: false,
   isActive: false,
 };

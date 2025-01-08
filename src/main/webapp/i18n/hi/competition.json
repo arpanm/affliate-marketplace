@@ -21,6 +21,7 @@
       "title": "Title",
       "description": "Description",
       "status": "Status",
+      "paymentStatus": "Payment Status",
       "isBlocked": "Is Blocked",
       "blockReason": "Block Reason",
       "blockedBy": "Blocked By",

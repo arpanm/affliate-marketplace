@@ -132,10 +132,10 @@ export const AiToolChatUpdate = () => {
                 ))}
               </ValidatedField>
               <ValidatedField
-                label={translate('affliateMarketplaceApp.aiToolChat.isFinalVidel')}
-                id="ai-tool-chat-isFinalVidel"
-                name="isFinalVidel"
-                data-cy="isFinalVidel"
+                label={translate('affliateMarketplaceApp.aiToolChat.isFinalVideo')}
+                id="ai-tool-chat-isFinalVideo"
+                name="isFinalVideo"
+                data-cy="isFinalVideo"
                 check
                 type="checkbox"
               />

@@ -53,6 +53,7 @@ public class ReviewAsserts {
             .satisfies(e -> assertThat(e.getIsWatched()).as("check isWatched").isEqualTo(actual.getIsWatched()))
             .satisfies(e -> assertThat(e.getIsFullyWatched()).as("check isFullyWatched").isEqualTo(actual.getIsFullyWatched()))
             .satisfies(e -> assertThat(e.getIsReported()).as("check isReported").isEqualTo(actual.getIsReported()))
+            .satisfies(e -> assertThat(e.getReportType()).as("check reportType").isEqualTo(actual.getReportType()))
             .satisfies(e -> assertThat(e.getRating()).as("check rating").isEqualTo(actual.getRating()))
             .satisfies(e -> assertThat(e.getComment()).as("check comment").isEqualTo(actual.getComment()))
             .satisfies(e -> assertThat(e.getReportReason()).as("check reportReason").isEqualTo(actual.getReportReason()))

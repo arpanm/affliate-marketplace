@@ -43,6 +43,9 @@ class AiToolSessionResourceIT {
     private static final Boolean DEFAULT_IS_VIDEO_GENERATED = false;
     private static final Boolean UPDATED_IS_VIDEO_GENERATED = true;
 
+    private static final Boolean DEFAULT_IS_VIDEO_DOWNLOADED = false;
+    private static final Boolean UPDATED_IS_VIDEO_DOWNLOADED = true;
+
     private static final Boolean DEFAULT_IS_ACTIVE = false;
     private static final Boolean UPDATED_IS_ACTIVE = true;
 
@@ -91,6 +94,7 @@ class AiToolSessionResourceIT {
             .isPaymentLinkGenerated(DEFAULT_IS_PAYMENT_LINK_GENERATED)
             .isPaid(DEFAULT_IS_PAID)
             .isVideoGenerated(DEFAULT_IS_VIDEO_GENERATED)
+            .isVideoDownloaded(DEFAULT_IS_VIDEO_DOWNLOADED)
             .isActive(DEFAULT_IS_ACTIVE)
             .createdBy(DEFAULT_CREATED_BY)
             .createdOn(DEFAULT_CREATED_ON)
@@ -109,6 +113,7 @@ class AiToolSessionResourceIT {
             .isPaymentLinkGenerated(UPDATED_IS_PAYMENT_LINK_GENERATED)
             .isPaid(UPDATED_IS_PAID)
             .isVideoGenerated(UPDATED_IS_VIDEO_GENERATED)
+            .isVideoDownloaded(UPDATED_IS_VIDEO_DOWNLOADED)
             .isActive(UPDATED_IS_ACTIVE)
             .createdBy(UPDATED_CREATED_BY)
             .createdOn(UPDATED_CREATED_ON)
@@ -183,6 +188,7 @@ class AiToolSessionResourceIT {
             .andExpect(jsonPath("$.[*].isPaymentLinkGenerated").value(hasItem(DEFAULT_IS_PAYMENT_LINK_GENERATED)))
             .andExpect(jsonPath("$.[*].isPaid").value(hasItem(DEFAULT_IS_PAID)))
             .andExpect(jsonPath("$.[*].isVideoGenerated").value(hasItem(DEFAULT_IS_VIDEO_GENERATED)))
+            .andExpect(jsonPath("$.[*].isVideoDownloaded").value(hasItem(DEFAULT_IS_VIDEO_DOWNLOADED)))
             .andExpect(jsonPath("$.[*].isActive").value(hasItem(DEFAULT_IS_ACTIVE)))
             .andExpect(jsonPath("$.[*].createdBy").value(hasItem(DEFAULT_CREATED_BY)))
             .andExpect(jsonPath("$.[*].createdOn").value(hasItem(DEFAULT_CREATED_ON.toString())))
@@ -205,6 +211,7 @@ class AiToolSessionResourceIT {
             .andExpect(jsonPath("$.isPaymentLinkGenerated").value(DEFAULT_IS_PAYMENT_LINK_GENERATED))
             .andExpect(jsonPath("$.isPaid").value(DEFAULT_IS_PAID))
             .andExpect(jsonPath("$.isVideoGenerated").value(DEFAULT_IS_VIDEO_GENERATED))
+            .andExpect(jsonPath("$.isVideoDownloaded").value(DEFAULT_IS_VIDEO_DOWNLOADED))
             .andExpect(jsonPath("$.isActive").value(DEFAULT_IS_ACTIVE))
             .andExpect(jsonPath("$.createdBy").value(DEFAULT_CREATED_BY))
             .andExpect(jsonPath("$.createdOn").value(DEFAULT_CREATED_ON.toString()))
@@ -235,6 +242,7 @@ class AiToolSessionResourceIT {
             .isPaymentLinkGenerated(UPDATED_IS_PAYMENT_LINK_GENERATED)
             .isPaid(UPDATED_IS_PAID)
             .isVideoGenerated(UPDATED_IS_VIDEO_GENERATED)
+            .isVideoDownloaded(UPDATED_IS_VIDEO_DOWNLOADED)
             .isActive(UPDATED_IS_ACTIVE)
             .createdBy(UPDATED_CREATED_BY)
             .createdOn(UPDATED_CREATED_ON)
@@ -322,9 +330,10 @@ class AiToolSessionResourceIT {
         partialUpdatedAiToolSession
             .isPaymentLinkGenerated(UPDATED_IS_PAYMENT_LINK_GENERATED)
             .isVideoGenerated(UPDATED_IS_VIDEO_GENERATED)
+            .isVideoDownloaded(UPDATED_IS_VIDEO_DOWNLOADED)
             .isActive(UPDATED_IS_ACTIVE)
             .createdBy(UPDATED_CREATED_BY)
-            .createdOn(UPDATED_CREATED_ON);
+            .updatedOn(UPDATED_UPDATED_ON);
 
         restAiToolSessionMockMvc
             .perform(
@@ -359,6 +368,7 @@ class AiToolSessionResourceIT {
             .isPaymentLinkGenerated(UPDATED_IS_PAYMENT_LINK_GENERATED)
             .isPaid(UPDATED_IS_PAID)
             .isVideoGenerated(UPDATED_IS_VIDEO_GENERATED)
+            .isVideoDownloaded(UPDATED_IS_VIDEO_DOWNLOADED)
             .isActive(UPDATED_IS_ACTIVE)
             .createdBy(UPDATED_CREATED_BY)
             .createdOn(UPDATED_CREATED_ON)

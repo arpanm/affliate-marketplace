@@ -100,6 +100,10 @@ export const Competition = () => {
                   <Translate contentKey="affliateMarketplaceApp.competition.status">Status</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('status')} />
                 </th>
+                <th className="hand" onClick={sort('paymentStatus')}>
+                  <Translate contentKey="affliateMarketplaceApp.competition.paymentStatus">Payment Status</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('paymentStatus')} />
+                </th>
                 <th className="hand" onClick={sort('isBlocked')}>
                   <Translate contentKey="affliateMarketplaceApp.competition.isBlocked">Is Blocked</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('isBlocked')} />
@@ -201,7 +205,10 @@ export const Competition = () => {
                   <td>{competition.title}</td>
                   <td>{competition.description}</td>
                   <td>
-                    <Translate contentKey={`affliateMarketplaceApp.CompetitionPaymentStatus.${competition.status}`} />
+                    <Translate contentKey={`affliateMarketplaceApp.CompetitionStatus.${competition.status}`} />
+                  </td>
+                  <td>
+                    <Translate contentKey={`affliateMarketplaceApp.CompetitionPaymentStatus.${competition.paymentStatus}`} />
                   </td>
                   <td>{competition.isBlocked ? 'true' : 'false'}</td>
                   <td>{competition.blockReason}</td>

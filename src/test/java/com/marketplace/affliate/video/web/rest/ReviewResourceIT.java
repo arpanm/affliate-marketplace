@@ -10,6 +10,7 @@ import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.marketplace.affliate.video.IntegrationTest;
 import com.marketplace.affliate.video.domain.Review;
+import com.marketplace.affliate.video.domain.enumeration.ReportType;
 import com.marketplace.affliate.video.repository.ReviewRepository;
 import jakarta.persistence.EntityManager;
 import java.time.LocalDate;
@@ -51,6 +52,9 @@ class ReviewResourceIT {
 
     private static final Boolean DEFAULT_IS_REPORTED = false;
     private static final Boolean UPDATED_IS_REPORTED = true;
+
+    private static final ReportType DEFAULT_REPORT_TYPE = ReportType.Abusive;
+    private static final ReportType UPDATED_REPORT_TYPE = ReportType.Nuidity;
 
     private static final Long DEFAULT_RATING = 1L;
     private static final Long UPDATED_RATING = 2L;
@@ -118,6 +122,7 @@ class ReviewResourceIT {
             .isWatched(DEFAULT_IS_WATCHED)
             .isFullyWatched(DEFAULT_IS_FULLY_WATCHED)
             .isReported(DEFAULT_IS_REPORTED)
+            .reportType(DEFAULT_REPORT_TYPE)
             .rating(DEFAULT_RATING)
             .comment(DEFAULT_COMMENT)
             .reportReason(DEFAULT_REPORT_REASON)
@@ -144,6 +149,7 @@ class ReviewResourceIT {
             .isWatched(UPDATED_IS_WATCHED)
             .isFullyWatched(UPDATED_IS_FULLY_WATCHED)
             .isReported(UPDATED_IS_REPORTED)
+            .reportType(UPDATED_REPORT_TYPE)
             .rating(UPDATED_RATING)
             .comment(UPDATED_COMMENT)
             .reportReason(UPDATED_REPORT_REASON)
@@ -226,6 +232,7 @@ class ReviewResourceIT {
             .andExpect(jsonPath("$.[*].isWatched").value(hasItem(DEFAULT_IS_WATCHED)))
             .andExpect(jsonPath("$.[*].isFullyWatched").value(hasItem(DEFAULT_IS_FULLY_WATCHED)))
             .andExpect(jsonPath("$.[*].isReported").value(hasItem(DEFAULT_IS_REPORTED)))
+            .andExpect(jsonPath("$.[*].reportType").value(hasItem(DEFAULT_REPORT_TYPE.toString())))
             .andExpect(jsonPath("$.[*].rating").value(hasItem(DEFAULT_RATING.intValue())))
             .andExpect(jsonPath("$.[*].comment").value(hasItem(DEFAULT_COMMENT)))
             .andExpect(jsonPath("$.[*].reportReason").value(hasItem(DEFAULT_REPORT_REASON)))
@@ -256,6 +263,7 @@ class ReviewResourceIT {
             .andExpect(jsonPath("$.isWatched").value(DEFAULT_IS_WATCHED))
             .andExpect(jsonPath("$.isFullyWatched").value(DEFAULT_IS_FULLY_WATCHED))
             .andExpect(jsonPath("$.isReported").value(DEFAULT_IS_REPORTED))
+            .andExpect(jsonPath("$.reportType").value(DEFAULT_REPORT_TYPE.toString()))
             .andExpect(jsonPath("$.rating").value(DEFAULT_RATING.intValue()))
             .andExpect(jsonPath("$.comment").value(DEFAULT_COMMENT))
             .andExpect(jsonPath("$.reportReason").value(DEFAULT_REPORT_REASON))
@@ -294,6 +302,7 @@ class ReviewResourceIT {
             .isWatched(UPDATED_IS_WATCHED)
             .isFullyWatched(UPDATED_IS_FULLY_WATCHED)
             .isReported(UPDATED_IS_REPORTED)
+            .reportType(UPDATED_REPORT_TYPE)
             .rating(UPDATED_RATING)
             .comment(UPDATED_COMMENT)
             .reportReason(UPDATED_REPORT_REASON)
@@ -383,11 +392,11 @@ class ReviewResourceIT {
             .isDisliked(UPDATED_IS_DISLIKED)
             .isFullyWatched(UPDATED_IS_FULLY_WATCHED)
             .isReported(UPDATED_IS_REPORTED)
-            .comment(UPDATED_COMMENT)
+            .rating(UPDATED_RATING)
+            .reportReason(UPDATED_REPORT_REASON)
             .isBlocked(UPDATED_IS_BLOCKED)
-            .isModerated(UPDATED_IS_MODERATED)
-            .createdBy(UPDATED_CREATED_BY)
-            .updatedBy(UPDATED_UPDATED_BY);
+            .isActive(UPDATED_IS_ACTIVE)
+            .createdOn(UPDATED_CREATED_ON);
 
         restReviewMockMvc
             .perform(
@@ -422,6 +431,7 @@ class ReviewResourceIT {
             .isWatched(UPDATED_IS_WATCHED)
             .isFullyWatched(UPDATED_IS_FULLY_WATCHED)
             .isReported(UPDATED_IS_REPORTED)
+            .reportType(UPDATED_REPORT_TYPE)
             .rating(UPDATED_RATING)
             .comment(UPDATED_COMMENT)
             .reportReason(UPDATED_REPORT_REASON)

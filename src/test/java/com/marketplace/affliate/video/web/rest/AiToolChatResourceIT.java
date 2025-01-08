@@ -47,8 +47,8 @@ class AiToolChatResourceIT {
     private static final ChatType DEFAULT_TYPE = ChatType.UserMessage;
     private static final ChatType UPDATED_TYPE = ChatType.AiResponse;
 
-    private static final Boolean DEFAULT_IS_FINAL_VIDEL = false;
-    private static final Boolean UPDATED_IS_FINAL_VIDEL = true;
+    private static final Boolean DEFAULT_IS_FINAL_VIDEO = false;
+    private static final Boolean UPDATED_IS_FINAL_VIDEO = true;
 
     private static final Boolean DEFAULT_IS_DOWNLOADED = false;
     private static final Boolean UPDATED_IS_DOWNLOADED = true;
@@ -102,7 +102,7 @@ class AiToolChatResourceIT {
             .videoUrl(DEFAULT_VIDEO_URL)
             .paymentUrl(DEFAULT_PAYMENT_URL)
             .type(DEFAULT_TYPE)
-            .isFinalVidel(DEFAULT_IS_FINAL_VIDEL)
+            .isFinalVideo(DEFAULT_IS_FINAL_VIDEO)
             .isDownloaded(DEFAULT_IS_DOWNLOADED)
             .isActive(DEFAULT_IS_ACTIVE)
             .createdBy(DEFAULT_CREATED_BY)
@@ -123,7 +123,7 @@ class AiToolChatResourceIT {
             .videoUrl(UPDATED_VIDEO_URL)
             .paymentUrl(UPDATED_PAYMENT_URL)
             .type(UPDATED_TYPE)
-            .isFinalVidel(UPDATED_IS_FINAL_VIDEL)
+            .isFinalVideo(UPDATED_IS_FINAL_VIDEO)
             .isDownloaded(UPDATED_IS_DOWNLOADED)
             .isActive(UPDATED_IS_ACTIVE)
             .createdBy(UPDATED_CREATED_BY)
@@ -200,7 +200,7 @@ class AiToolChatResourceIT {
             .andExpect(jsonPath("$.[*].videoUrl").value(hasItem(DEFAULT_VIDEO_URL)))
             .andExpect(jsonPath("$.[*].paymentUrl").value(hasItem(DEFAULT_PAYMENT_URL)))
             .andExpect(jsonPath("$.[*].type").value(hasItem(DEFAULT_TYPE.toString())))
-            .andExpect(jsonPath("$.[*].isFinalVidel").value(hasItem(DEFAULT_IS_FINAL_VIDEL)))
+            .andExpect(jsonPath("$.[*].isFinalVideo").value(hasItem(DEFAULT_IS_FINAL_VIDEO)))
             .andExpect(jsonPath("$.[*].isDownloaded").value(hasItem(DEFAULT_IS_DOWNLOADED)))
             .andExpect(jsonPath("$.[*].isActive").value(hasItem(DEFAULT_IS_ACTIVE)))
             .andExpect(jsonPath("$.[*].createdBy").value(hasItem(DEFAULT_CREATED_BY)))
@@ -225,7 +225,7 @@ class AiToolChatResourceIT {
             .andExpect(jsonPath("$.videoUrl").value(DEFAULT_VIDEO_URL))
             .andExpect(jsonPath("$.paymentUrl").value(DEFAULT_PAYMENT_URL))
             .andExpect(jsonPath("$.type").value(DEFAULT_TYPE.toString()))
-            .andExpect(jsonPath("$.isFinalVidel").value(DEFAULT_IS_FINAL_VIDEL))
+            .andExpect(jsonPath("$.isFinalVideo").value(DEFAULT_IS_FINAL_VIDEO))
             .andExpect(jsonPath("$.isDownloaded").value(DEFAULT_IS_DOWNLOADED))
             .andExpect(jsonPath("$.isActive").value(DEFAULT_IS_ACTIVE))
             .andExpect(jsonPath("$.createdBy").value(DEFAULT_CREATED_BY))
@@ -258,7 +258,7 @@ class AiToolChatResourceIT {
             .videoUrl(UPDATED_VIDEO_URL)
             .paymentUrl(UPDATED_PAYMENT_URL)
             .type(UPDATED_TYPE)
-            .isFinalVidel(UPDATED_IS_FINAL_VIDEL)
+            .isFinalVideo(UPDATED_IS_FINAL_VIDEO)
             .isDownloaded(UPDATED_IS_DOWNLOADED)
             .isActive(UPDATED_IS_ACTIVE)
             .createdBy(UPDATED_CREATED_BY)
@@ -347,7 +347,7 @@ class AiToolChatResourceIT {
             .videoUrl(UPDATED_VIDEO_URL)
             .paymentUrl(UPDATED_PAYMENT_URL)
             .type(UPDATED_TYPE)
-            .isFinalVidel(UPDATED_IS_FINAL_VIDEL)
+            .isFinalVideo(UPDATED_IS_FINAL_VIDEO)
             .isDownloaded(UPDATED_IS_DOWNLOADED)
             .isActive(UPDATED_IS_ACTIVE)
             .createdBy(UPDATED_CREATED_BY)
@@ -389,7 +389,7 @@ class AiToolChatResourceIT {
             .videoUrl(UPDATED_VIDEO_URL)
             .paymentUrl(UPDATED_PAYMENT_URL)
             .type(UPDATED_TYPE)
-            .isFinalVidel(UPDATED_IS_FINAL_VIDEL)
+            .isFinalVideo(UPDATED_IS_FINAL_VIDEO)
             .isDownloaded(UPDATED_IS_DOWNLOADED)
             .isActive(UPDATED_IS_ACTIVE)
             .createdBy(UPDATED_CREATED_BY)

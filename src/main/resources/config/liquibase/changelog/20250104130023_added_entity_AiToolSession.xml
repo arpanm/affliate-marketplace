@@ -23,6 +23,9 @@
             <column name="is_video_generated" type="boolean">
                 <constraints nullable="true" />
             </column>
+            <column name="is_video_downloaded" type="boolean">
+                <constraints nullable="true" />
+            </column>
             <column name="is_active" type="boolean">
                 <constraints nullable="true" />
             </column>
@@ -68,6 +71,7 @@
             <column name="is_payment_link_generated" type="boolean"/>
             <column name="is_paid" type="boolean"/>
             <column name="is_video_generated" type="boolean"/>
+            <column name="is_video_downloaded" type="boolean"/>
             <column name="is_active" type="boolean"/>
             <column name="created_by" type="string"/>
             <column name="created_on" type="date"/>

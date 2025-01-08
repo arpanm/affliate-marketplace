@@ -23,6 +23,7 @@
       "bankName": "Bank Name",
       "ifsc": "Ifsc",
       "proofUrl": "Proof Url",
+      "upiHandle": "Upi Handle",
       "isActive": "Is Active",
       "createdBy": "Created By",
       "createdOn": "Created On",

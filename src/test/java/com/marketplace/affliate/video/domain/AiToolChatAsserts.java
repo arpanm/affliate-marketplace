@@ -51,7 +51,7 @@ public class AiToolChatAsserts {
             .satisfies(e -> assertThat(e.getVideoUrl()).as("check videoUrl").isEqualTo(actual.getVideoUrl()))
             .satisfies(e -> assertThat(e.getPaymentUrl()).as("check paymentUrl").isEqualTo(actual.getPaymentUrl()))
             .satisfies(e -> assertThat(e.getType()).as("check type").isEqualTo(actual.getType()))
-            .satisfies(e -> assertThat(e.getIsFinalVidel()).as("check isFinalVidel").isEqualTo(actual.getIsFinalVidel()))
+            .satisfies(e -> assertThat(e.getIsFinalVideo()).as("check isFinalVideo").isEqualTo(actual.getIsFinalVideo()))
             .satisfies(e -> assertThat(e.getIsDownloaded()).as("check isDownloaded").isEqualTo(actual.getIsDownloaded()))
             .satisfies(e -> assertThat(e.getIsActive()).as("check isActive").isEqualTo(actual.getIsActive()))
             .satisfies(e -> assertThat(e.getCreatedBy()).as("check createdBy").isEqualTo(actual.getCreatedBy()))

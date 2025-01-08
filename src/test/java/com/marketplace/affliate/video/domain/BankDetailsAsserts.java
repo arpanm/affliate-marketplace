@@ -52,6 +52,7 @@ public class BankDetailsAsserts {
             .satisfies(e -> assertThat(e.getBankName()).as("check bankName").isEqualTo(actual.getBankName()))
             .satisfies(e -> assertThat(e.getIfsc()).as("check ifsc").isEqualTo(actual.getIfsc()))
             .satisfies(e -> assertThat(e.getProofUrl()).as("check proofUrl").isEqualTo(actual.getProofUrl()))
+            .satisfies(e -> assertThat(e.getUpiHandle()).as("check upiHandle").isEqualTo(actual.getUpiHandle()))
             .satisfies(e -> assertThat(e.getIsActive()).as("check isActive").isEqualTo(actual.getIsActive()))
             .satisfies(e -> assertThat(e.getCreatedBy()).as("check createdBy").isEqualTo(actual.getCreatedBy()))
             .satisfies(e -> assertThat(e.getCreatedOn()).as("check createdOn").isEqualTo(actual.getCreatedOn()))

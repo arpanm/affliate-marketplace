@@ -22,7 +22,7 @@
       "videoUrl": "Video Url",
       "paymentUrl": "Payment Url",
       "type": "Type",
-      "isFinalVidel": "Is Final Videl",
+      "isFinalVideo": "Is Final Video",
       "isDownloaded": "Is Downloaded",
       "isActive": "Is Active",
       "createdBy": "Created By",

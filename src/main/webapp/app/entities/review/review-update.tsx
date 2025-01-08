@@ -8,6 +8,7 @@ import { useAppDispatch, useAppSelector } from 'app/config/store';
 
 import { getEntities as getVideoUsers } from 'app/entities/video-user/video-user.reducer';
 import { getEntities as getVideoPosts } from 'app/entities/video-post/video-post.reducer';
+import { ReportType } from 'app/shared/model/enumerations/report-type.model';
 import { createEntity, getEntity, reset, updateEntity } from './review.reducer';
 
 export const ReviewUpdate = () => {
@@ -24,6 +25,7 @@ export const ReviewUpdate = () => {
   const loading = useAppSelector(state => state.review.loading);
   const updating = useAppSelector(state => state.review.updating);
   const updateSuccess = useAppSelector(state => state.review.updateSuccess);
+  const reportTypeValues = Object.keys(ReportType);
 
   const handleClose = () => {
     navigate('/review');
@@ -72,6 +74,7 @@ export const ReviewUpdate = () => {
     isNew
       ? {}
       : {
+          reportType: 'Abusive',
           ...reviewEntity,
           reviewer: reviewEntity?.reviewer?.id,
           post: reviewEntity?.post?.id,
@@ -150,6 +153,19 @@ export const ReviewUpdate = () => {
                 check
                 type="checkbox"
               />
+              <ValidatedField
+                label={translate('affliateMarketplaceApp.review.reportType')}
+                id="review-reportType"
+                name="reportType"
+                data-cy="reportType"
+                type="select"
+              >
+                {reportTypeValues.map(reportType => (
+                  <option value={reportType} key={reportType}>
+                    {translate(`affliateMarketplaceApp.ReportType.${reportType}`)}
+                  </option>
+                ))}
+              </ValidatedField>
               <ValidatedField
                 label={translate('affliateMarketplaceApp.review.rating')}
                 id="review-rating"

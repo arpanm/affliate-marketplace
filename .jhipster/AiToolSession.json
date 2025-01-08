@@ -17,6 +17,10 @@
       "fieldType": "Boolean"
     },
     {
+      "fieldName": "isVideoDownloaded",
+      "fieldType": "Boolean"
+    },
+    {
       "fieldName": "isActive",
       "fieldType": "Boolean"
     },

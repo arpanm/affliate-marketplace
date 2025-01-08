@@ -11,6 +11,7 @@ import com.fasterxml.jackson.databind.ObjectMapper;
 import com.marketplace.affliate.video.IntegrationTest;
 import com.marketplace.affliate.video.domain.Competition;
 import com.marketplace.affliate.video.domain.enumeration.CompetitionPaymentStatus;
+import com.marketplace.affliate.video.domain.enumeration.CompetitionStatus;
 import com.marketplace.affliate.video.repository.CompetitionRepository;
 import jakarta.persistence.EntityManager;
 import java.time.LocalDate;
@@ -41,8 +42,11 @@ class CompetitionResourceIT {
     private static final String DEFAULT_DESCRIPTION = "AAAAAAAAAA";
     private static final String UPDATED_DESCRIPTION = "BBBBBBBBBB";
 
-    private static final CompetitionPaymentStatus DEFAULT_STATUS = CompetitionPaymentStatus.PaymentPendingFromSponsor;
-    private static final CompetitionPaymentStatus UPDATED_STATUS = CompetitionPaymentStatus.PaymentReceivedFromSponsor;
+    private static final CompetitionStatus DEFAULT_STATUS = CompetitionStatus.Draft;
+    private static final CompetitionStatus UPDATED_STATUS = CompetitionStatus.Scheduled;
+
+    private static final CompetitionPaymentStatus DEFAULT_PAYMENT_STATUS = CompetitionPaymentStatus.PaymentPendingFromSponsor;
+    private static final CompetitionPaymentStatus UPDATED_PAYMENT_STATUS = CompetitionPaymentStatus.PaymentReceivedFromSponsor;
 
     private static final Boolean DEFAULT_IS_BLOCKED = false;
     private static final Boolean UPDATED_IS_BLOCKED = true;
@@ -140,6 +144,7 @@ class CompetitionResourceIT {
             .title(DEFAULT_TITLE)
             .description(DEFAULT_DESCRIPTION)
             .status(DEFAULT_STATUS)
+            .paymentStatus(DEFAULT_PAYMENT_STATUS)
             .isBlocked(DEFAULT_IS_BLOCKED)
             .blockReason(DEFAULT_BLOCK_REASON)
             .blockedBy(DEFAULT_BLOCKED_BY)
@@ -174,6 +179,7 @@ class CompetitionResourceIT {
             .title(UPDATED_TITLE)
             .description(UPDATED_DESCRIPTION)
             .status(UPDATED_STATUS)
+            .paymentStatus(UPDATED_PAYMENT_STATUS)
             .isBlocked(UPDATED_IS_BLOCKED)
             .blockReason(UPDATED_BLOCK_REASON)
             .blockedBy(UPDATED_BLOCKED_BY)
@@ -264,6 +270,7 @@ class CompetitionResourceIT {
             .andExpect(jsonPath("$.[*].title").value(hasItem(DEFAULT_TITLE)))
             .andExpect(jsonPath("$.[*].description").value(hasItem(DEFAULT_DESCRIPTION)))
             .andExpect(jsonPath("$.[*].status").value(hasItem(DEFAULT_STATUS.toString())))
+            .andExpect(jsonPath("$.[*].paymentStatus").value(hasItem(DEFAULT_PAYMENT_STATUS.toString())))
             .andExpect(jsonPath("$.[*].isBlocked").value(hasItem(DEFAULT_IS_BLOCKED)))
             .andExpect(jsonPath("$.[*].blockReason").value(hasItem(DEFAULT_BLOCK_REASON)))
             .andExpect(jsonPath("$.[*].blockedBy").value(hasItem(DEFAULT_BLOCKED_BY)))
@@ -302,6 +309,7 @@ class CompetitionResourceIT {
             .andExpect(jsonPath("$.title").value(DEFAULT_TITLE))
             .andExpect(jsonPath("$.description").value(DEFAULT_DESCRIPTION))
             .andExpect(jsonPath("$.status").value(DEFAULT_STATUS.toString()))
+            .andExpect(jsonPath("$.paymentStatus").value(DEFAULT_PAYMENT_STATUS.toString()))
             .andExpect(jsonPath("$.isBlocked").value(DEFAULT_IS_BLOCKED))
             .andExpect(jsonPath("$.blockReason").value(DEFAULT_BLOCK_REASON))
             .andExpect(jsonPath("$.blockedBy").value(DEFAULT_BLOCKED_BY))
@@ -348,6 +356,7 @@ class CompetitionResourceIT {
             .title(UPDATED_TITLE)
             .description(UPDATED_DESCRIPTION)
             .status(UPDATED_STATUS)
+            .paymentStatus(UPDATED_PAYMENT_STATUS)
             .isBlocked(UPDATED_IS_BLOCKED)
             .blockReason(UPDATED_BLOCK_REASON)
             .blockedBy(UPDATED_BLOCKED_BY)
@@ -450,14 +459,15 @@ class CompetitionResourceIT {
 
         partialUpdatedCompetition
             .title(UPDATED_TITLE)
-            .blockReason(UPDATED_BLOCK_REASON)
-            .isPaused(UPDATED_IS_PAUSED)
-            .banner1Url(UPDATED_BANNER_1_URL)
+            .isBlocked(UPDATED_IS_BLOCKED)
+            .blockedBy(UPDATED_BLOCKED_BY)
+            .pausedBy(UPDATED_PAUSED_BY)
+            .endDate(UPDATED_END_DATE)
             .landingUrl(UPDATED_LANDING_URL)
             .totalPrizeValue(UPDATED_TOTAL_PRIZE_VALUE)
             .invoiceToSponsorUrl(UPDATED_INVOICE_TO_SPONSOR_URL)
-            .tncUrl(UPDATED_TNC_URL)
-            .updatedBy(UPDATED_UPDATED_BY);
+            .createdOn(UPDATED_CREATED_ON)
+            .updatedOn(UPDATED_UPDATED_ON);
 
         restCompetitionMockMvc
             .perform(
@@ -492,6 +502,7 @@ class CompetitionResourceIT {
             .title(UPDATED_TITLE)
             .description(UPDATED_DESCRIPTION)
             .status(UPDATED_STATUS)
+            .paymentStatus(UPDATED_PAYMENT_STATUS)
             .isBlocked(UPDATED_IS_BLOCKED)
             .blockReason(UPDATED_BLOCK_REASON)
             .blockedBy(UPDATED_BLOCKED_BY)

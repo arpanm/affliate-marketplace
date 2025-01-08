@@ -7,6 +7,7 @@ export interface IBankDetails {
   bankName?: string | null;
   ifsc?: string | null;
   proofUrl?: string | null;
+  upiHandle?: string | null;
   isActive?: boolean | null;
   createdBy?: string | null;
   createdOn?: dayjs.Dayjs | null;

@@ -26,7 +26,7 @@
             <column name="type" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
-            <column name="is_final_videl" type="boolean">
+            <column name="is_final_video" type="boolean">
                 <constraints nullable="true" />
             </column>
             <column name="is_downloaded" type="boolean">
@@ -75,7 +75,7 @@
             <column name="video_url" type="string"/>
             <column name="payment_url" type="string"/>
             <column name="type" type="string"/>
-            <column name="is_final_videl" type="boolean"/>
+            <column name="is_final_video" type="boolean"/>
             <column name="is_downloaded" type="boolean"/>
             <column name="is_active" type="boolean"/>
             <column name="created_by" type="string"/>

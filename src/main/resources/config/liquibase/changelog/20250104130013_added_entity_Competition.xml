@@ -23,6 +23,9 @@
             <column name="status" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
+            <column name="payment_status" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
             <column name="is_blocked" type="boolean">
                 <constraints nullable="true" />
             </column>
@@ -113,6 +116,7 @@
             <column name="title" type="string"/>
             <column name="description" type="string"/>
             <column name="status" type="string"/>
+            <column name="payment_status" type="string"/>
             <column name="is_blocked" type="boolean"/>
             <column name="block_reason" type="string"/>
             <column name="blocked_by" type="string"/>

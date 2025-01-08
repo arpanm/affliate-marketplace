@@ -1,6 +1,7 @@
 package com.marketplace.affliate.video.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import com.marketplace.affliate.video.domain.enumeration.ReportType;
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;
 import java.io.Serializable;
@@ -43,6 +44,10 @@ public class Review implements Serializable {
 
     @Column(name = "is_reported")
     private Boolean isReported;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "report_type")
+    private ReportType reportType;
 
     @Min(value = 1L)
     @Max(value = 5L)
@@ -186,6 +191,19 @@ public class Review implements Serializable {
 
     public void setIsReported(Boolean isReported) {
         this.isReported = isReported;
+    }
+
+    public ReportType getReportType() {
+        return this.reportType;
+    }
+
+    public Review reportType(ReportType reportType) {
+        this.setReportType(reportType);
+        return this;
+    }
+
+    public void setReportType(ReportType reportType) {
+        this.reportType = reportType;
     }
 
     public Long getRating() {
@@ -405,6 +423,7 @@ public class Review implements Serializable {
             ", isWatched='" + getIsWatched() + "'" +
             ", isFullyWatched='" + getIsFullyWatched() + "'" +
             ", isReported='" + getIsReported() + "'" +
+            ", reportType='" + getReportType() + "'" +
             ", rating=" + getRating() +
             ", comment='" + getComment() + "'" +
             ", reportReason='" + getReportReason() + "'" +

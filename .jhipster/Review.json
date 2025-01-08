@@ -29,6 +29,11 @@
       "fieldType": "Boolean"
     },
     {
+      "fieldName": "reportType",
+      "fieldType": "ReportType",
+      "fieldValues": "Abusive,Nuidity,Hetrated,Violence,Hate,Threats,SelfHarm,ChildAbuse,OtherHarmful,Harassment,Bullying,Cyberbullying,PersonalAttack,Doxing,OtherDangerous,NonConsensual,PIIData,Misinformation,Spam,FalseInformation,PrivacyViolations,DeceptivePractices,OtherIntellectualPropertyIssues,TrademarkViolation,CopyrightInfringement,Other"
+    },
+    {
       "fieldName": "rating",
       "fieldType": "Long",
       "fieldValidateRules": ["min", "max"],

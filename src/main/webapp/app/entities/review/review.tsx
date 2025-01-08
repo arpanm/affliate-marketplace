@@ -112,6 +112,10 @@ export const Review = () => {
                   <Translate contentKey="affliateMarketplaceApp.review.isReported">Is Reported</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('isReported')} />
                 </th>
+                <th className="hand" onClick={sort('reportType')}>
+                  <Translate contentKey="affliateMarketplaceApp.review.reportType">Report Type</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('reportType')} />
+                </th>
                 <th className="hand" onClick={sort('rating')}>
                   <Translate contentKey="affliateMarketplaceApp.review.rating">Rating</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('rating')} />
@@ -175,6 +179,9 @@ export const Review = () => {
                   <td>{review.isWatched ? 'true' : 'false'}</td>
                   <td>{review.isFullyWatched ? 'true' : 'false'}</td>
                   <td>{review.isReported ? 'true' : 'false'}</td>
+                  <td>
+                    <Translate contentKey={`affliateMarketplaceApp.ReportType.${review.reportType}`} />
+                  </td>
                   <td>{review.rating}</td>
                   <td>{review.comment}</td>
                   <td>{review.reportReason}</td>

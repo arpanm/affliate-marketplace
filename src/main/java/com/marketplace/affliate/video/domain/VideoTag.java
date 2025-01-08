@@ -38,7 +38,7 @@ public class VideoTag implements Serializable {
     private Boolean isDeleted;
 
     @Column(name = "deletion_reason")
-    private Boolean deletionReason;
+    private String deletionReason;
 
     @Column(name = "merged_with_tag_name")
     private String mergedWithTagName;
@@ -136,16 +136,16 @@ public class VideoTag implements Serializable {
         this.isDeleted = isDeleted;
     }
 
-    public Boolean getDeletionReason() {
+    public String getDeletionReason() {
         return this.deletionReason;
     }
 
-    public VideoTag deletionReason(Boolean deletionReason) {
+    public VideoTag deletionReason(String deletionReason) {
         this.setDeletionReason(deletionReason);
         return this;
     }
 
-    public void setDeletionReason(Boolean deletionReason) {
+    public void setDeletionReason(String deletionReason) {
         this.deletionReason = deletionReason;
     }
 

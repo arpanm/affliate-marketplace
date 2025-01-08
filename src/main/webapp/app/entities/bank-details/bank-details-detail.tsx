@@ -63,6 +63,12 @@ export const BankDetailsDetail = () => {
           </dt>
           <dd>{bankDetailsEntity.proofUrl}</dd>
           <dt>
+            <span id="upiHandle">
+              <Translate contentKey="affliateMarketplaceApp.bankDetails.upiHandle">Upi Handle</Translate>
+            </span>
+          </dt>
+          <dd>{bankDetailsEntity.upiHandle}</dd>
+          <dt>
             <span id="isActive">
               <Translate contentKey="affliateMarketplaceApp.bankDetails.isActive">Is Active</Translate>
             </span>

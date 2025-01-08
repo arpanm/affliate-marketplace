@@ -130,8 +130,7 @@ export const VideoTagUpdate = () => {
                 id="video-tag-deletionReason"
                 name="deletionReason"
                 data-cy="deletionReason"
-                check
-                type="checkbox"
+                type="text"
               />
               <ValidatedField
                 label={translate('affliateMarketplaceApp.videoTag.mergedWithTagName')}

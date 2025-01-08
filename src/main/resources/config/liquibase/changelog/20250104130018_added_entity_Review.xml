@@ -32,6 +32,9 @@
             <column name="is_reported" type="boolean">
                 <constraints nullable="true" />
             </column>
+            <column name="report_type" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
             <column name="rating" type="bigint">
                 <constraints nullable="true" />
             </column>
@@ -95,6 +98,7 @@
             <column name="is_watched" type="boolean"/>
             <column name="is_fully_watched" type="boolean"/>
             <column name="is_reported" type="boolean"/>
+            <column name="report_type" type="string"/>
             <column name="rating" type="numeric"/>
             <column name="comment" type="string"/>
             <column name="report_reason" type="string"/>

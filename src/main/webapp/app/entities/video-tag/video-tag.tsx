@@ -154,7 +154,7 @@ export const VideoTag = () => {
                   <td>{videoTag.code}</td>
                   <td>{videoTag.isModerated ? 'true' : 'false'}</td>
                   <td>{videoTag.isDeleted ? 'true' : 'false'}</td>
-                  <td>{videoTag.deletionReason ? 'true' : 'false'}</td>
+                  <td>{videoTag.deletionReason}</td>
                   <td>{videoTag.mergedWithTagName}</td>
                   <td>{videoTag.mergedWithTagCode}</td>
                   <td>{videoTag.isActive ? 'true' : 'false'}</td>

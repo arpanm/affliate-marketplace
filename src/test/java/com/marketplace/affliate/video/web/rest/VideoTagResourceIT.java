@@ -46,8 +46,8 @@ class VideoTagResourceIT {
     private static final Boolean DEFAULT_IS_DELETED = false;
     private static final Boolean UPDATED_IS_DELETED = true;
 
-    private static final Boolean DEFAULT_DELETION_REASON = false;
-    private static final Boolean UPDATED_DELETION_REASON = true;
+    private static final String DEFAULT_DELETION_REASON = "AAAAAAAAAA";
+    private static final String UPDATED_DELETION_REASON = "BBBBBBBBBB";
 
     private static final String DEFAULT_MERGED_WITH_TAG_NAME = "AAAAAAAAAA";
     private static final String UPDATED_MERGED_WITH_TAG_NAME = "BBBBBBBBBB";

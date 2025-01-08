@@ -51,6 +51,12 @@ export const CompetitionDetail = () => {
           </dt>
           <dd>{competitionEntity.status}</dd>
           <dt>
+            <span id="paymentStatus">
+              <Translate contentKey="affliateMarketplaceApp.competition.paymentStatus">Payment Status</Translate>
+            </span>
+          </dt>
+          <dd>{competitionEntity.paymentStatus}</dd>
+          <dt>
             <span id="isBlocked">
               <Translate contentKey="affliateMarketplaceApp.competition.isBlocked">Is Blocked</Translate>
             </span>

@@ -29,6 +29,9 @@
             <column name="proof_url" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
+            <column name="upi_handle" type="varchar(255)">
+                <constraints nullable="true" />
+            </column>
             <column name="is_active" type="boolean">
                 <constraints nullable="true" />
             </column>
@@ -70,6 +73,7 @@
             <column name="bank_name" type="string"/>
             <column name="ifsc" type="string"/>
             <column name="proof_url" type="string"/>
+            <column name="upi_handle" type="string"/>
             <column name="is_active" type="boolean"/>
             <column name="created_by" type="string"/>
             <column name="created_on" type="date"/>

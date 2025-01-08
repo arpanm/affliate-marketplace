@@ -141,6 +141,9 @@ public class ReviewResource {
                 if (review.getIsReported() != null) {
                     existingReview.setIsReported(review.getIsReported());
                 }
+                if (review.getReportType() != null) {
+                    existingReview.setReportType(review.getReportType());
+                }
                 if (review.getRating() != null) {
                     existingReview.setRating(review.getRating());
                 }

@@ -17,6 +17,7 @@ public class BankDetailsTestSamples {
             .bankName("bankName1")
             .ifsc("ifsc1")
             .proofUrl("proofUrl1")
+            .upiHandle("upiHandle1")
             .createdBy("createdBy1")
             .updatedBy("updatedBy1");
     }
@@ -29,6 +30,7 @@ public class BankDetailsTestSamples {
             .bankName("bankName2")
             .ifsc("ifsc2")
             .proofUrl("proofUrl2")
+            .upiHandle("upiHandle2")
             .createdBy("createdBy2")
             .updatedBy("updatedBy2");
     }
@@ -41,6 +43,7 @@ public class BankDetailsTestSamples {
             .bankName(UUID.randomUUID().toString())
             .ifsc(UUID.randomUUID().toString())
             .proofUrl(UUID.randomUUID().toString())
+            .upiHandle(UUID.randomUUID().toString())
             .createdBy(UUID.randomUUID().toString())
             .updatedBy(UUID.randomUUID().toString());
     }

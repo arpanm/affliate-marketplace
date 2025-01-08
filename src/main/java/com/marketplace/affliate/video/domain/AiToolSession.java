@@ -34,6 +34,9 @@ public class AiToolSession implements Serializable {
     @Column(name = "is_video_generated")
     private Boolean isVideoGenerated;
 
+    @Column(name = "is_video_downloaded")
+    private Boolean isVideoDownloaded;
+
     @Column(name = "is_active")
     private Boolean isActive;
 
@@ -122,6 +125,19 @@ public class AiToolSession implements Serializable {
 
     public void setIsVideoGenerated(Boolean isVideoGenerated) {
         this.isVideoGenerated = isVideoGenerated;
+    }
+
+    public Boolean getIsVideoDownloaded() {
+        return this.isVideoDownloaded;
+    }
+
+    public AiToolSession isVideoDownloaded(Boolean isVideoDownloaded) {
+        this.setIsVideoDownloaded(isVideoDownloaded);
+        return this;
+    }
+
+    public void setIsVideoDownloaded(Boolean isVideoDownloaded) {
+        this.isVideoDownloaded = isVideoDownloaded;
     }
 
     public Boolean getIsActive() {
@@ -304,6 +320,7 @@ public class AiToolSession implements Serializable {
             ", isPaymentLinkGenerated='" + getIsPaymentLinkGenerated() + "'" +
             ", isPaid='" + getIsPaid() + "'" +
             ", isVideoGenerated='" + getIsVideoGenerated() + "'" +
+            ", isVideoDownloaded='" + getIsVideoDownloaded() + "'" +
             ", isActive='" + getIsActive() + "'" +
             ", createdBy='" + getCreatedBy() + "'" +
             ", createdOn='" + getCreatedOn() + "'" +

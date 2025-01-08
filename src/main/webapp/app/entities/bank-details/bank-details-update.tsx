@@ -124,6 +124,13 @@ export const BankDetailsUpdate = () => {
                 type="text"
               />
               <ValidatedField
+                label={translate('affliateMarketplaceApp.bankDetails.upiHandle')}
+                id="bank-details-upiHandle"
+                name="upiHandle"
+                data-cy="upiHandle"
+                type="text"
+              />
+              <ValidatedField
                 label={translate('affliateMarketplaceApp.bankDetails.isActive')}
                 id="bank-details-isActive"
                 name="isActive"
