@@ -26,7 +26,7 @@
             <column name="is_deleted" type="boolean">
                 <constraints nullable="true" />
             </column>
-            <column name="deletion_reason" type="boolean">
+            <column name="deletion_reason" type="varchar(255)">
                 <constraints nullable="true" />
             </column>
             <column name="merged_with_tag_name" type="varchar(255)">
@@ -75,7 +75,7 @@
             <column name="code" type="string"/>
             <column name="is_moderated" type="boolean"/>
             <column name="is_deleted" type="boolean"/>
-            <column name="deletion_reason" type="boolean"/>
+            <column name="deletion_reason" type="string"/>
             <column name="merged_with_tag_name" type="string"/>
             <column name="merged_with_tag_code" type="string"/>
             <column name="is_active" type="boolean"/>

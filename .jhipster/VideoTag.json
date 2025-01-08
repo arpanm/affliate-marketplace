@@ -22,7 +22,7 @@
     },
     {
       "fieldName": "deletionReason",
-      "fieldType": "Boolean"
+      "fieldType": "String"
     },
     {
       "fieldName": "mergedWithTagName",

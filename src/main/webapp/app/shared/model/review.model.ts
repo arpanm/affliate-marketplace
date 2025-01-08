@@ -1,6 +1,7 @@
 import dayjs from 'dayjs';
 import { IVideoUser } from 'app/shared/model/video-user.model';
 import { IVideoPost } from 'app/shared/model/video-post.model';
+import { ReportType } from 'app/shared/model/enumerations/report-type.model';
 
 export interface IReview {
   id?: number;
@@ -10,6 +11,7 @@ export interface IReview {
   isWatched?: boolean | null;
   isFullyWatched?: boolean | null;
   isReported?: boolean | null;
+  reportType?: keyof typeof ReportType | null;
   rating?: number | null;
   comment?: string | null;
   reportReason?: string | null;

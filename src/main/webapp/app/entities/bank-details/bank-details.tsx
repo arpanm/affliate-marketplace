@@ -108,6 +108,10 @@ export const BankDetails = () => {
                   <Translate contentKey="affliateMarketplaceApp.bankDetails.proofUrl">Proof Url</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('proofUrl')} />
                 </th>
+                <th className="hand" onClick={sort('upiHandle')}>
+                  <Translate contentKey="affliateMarketplaceApp.bankDetails.upiHandle">Upi Handle</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('upiHandle')} />
+                </th>
                 <th className="hand" onClick={sort('isActive')}>
                   <Translate contentKey="affliateMarketplaceApp.bankDetails.isActive">Is Active</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('isActive')} />
@@ -144,6 +148,7 @@ export const BankDetails = () => {
                   <td>{bankDetails.bankName}</td>
                   <td>{bankDetails.ifsc}</td>
                   <td>{bankDetails.proofUrl}</td>
+                  <td>{bankDetails.upiHandle}</td>
                   <td>{bankDetails.isActive ? 'true' : 'false'}</td>
                   <td>{bankDetails.createdBy}</td>
                   <td>

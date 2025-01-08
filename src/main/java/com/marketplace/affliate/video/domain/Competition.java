@@ -2,6 +2,7 @@ package com.marketplace.affliate.video.domain;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import com.marketplace.affliate.video.domain.enumeration.CompetitionPaymentStatus;
+import com.marketplace.affliate.video.domain.enumeration.CompetitionStatus;
 import jakarta.persistence.*;
 import java.io.Serializable;
 import java.time.LocalDate;
@@ -34,7 +35,11 @@ public class Competition implements Serializable {
 
     @Enumerated(EnumType.STRING)
     @Column(name = "status")
-    private CompetitionPaymentStatus status;
+    private CompetitionStatus status;
+
+    @Enumerated(EnumType.STRING)
+    @Column(name = "payment_status")
+    private CompetitionPaymentStatus paymentStatus;
 
     @Column(name = "is_blocked")
     private Boolean isBlocked;
@@ -162,17 +167,30 @@ public class Competition implements Serializable {
         this.description = description;
     }
 
-    public CompetitionPaymentStatus getStatus() {
+    public CompetitionStatus getStatus() {
         return this.status;
     }
 
-    public Competition status(CompetitionPaymentStatus status) {
+    public Competition status(CompetitionStatus status) {
         this.setStatus(status);
         return this;
     }
 
-    public void setStatus(CompetitionPaymentStatus status) {
+    public void setStatus(CompetitionStatus status) {
         this.status = status;
+    }
+
+    public CompetitionPaymentStatus getPaymentStatus() {
+        return this.paymentStatus;
+    }
+
+    public Competition paymentStatus(CompetitionPaymentStatus paymentStatus) {
+        this.setPaymentStatus(paymentStatus);
+        return this;
+    }
+
+    public void setPaymentStatus(CompetitionPaymentStatus paymentStatus) {
+        this.paymentStatus = paymentStatus;
     }
 
     public Boolean getIsBlocked() {
@@ -581,6 +599,7 @@ public class Competition implements Serializable {
             ", title='" + getTitle() + "'" +
             ", description='" + getDescription() + "'" +
             ", status='" + getStatus() + "'" +
+            ", paymentStatus='" + getPaymentStatus() + "'" +
             ", isBlocked='" + getIsBlocked() + "'" +
             ", blockReason='" + getBlockReason() + "'" +
             ", blockedBy='" + getBlockedBy() + "'" +

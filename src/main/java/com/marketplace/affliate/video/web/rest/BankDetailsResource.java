@@ -137,6 +137,9 @@ public class BankDetailsResource {
                 if (bankDetails.getProofUrl() != null) {
                     existingBankDetails.setProofUrl(bankDetails.getProofUrl());
                 }
+                if (bankDetails.getUpiHandle() != null) {
+                    existingBankDetails.setUpiHandle(bankDetails.getUpiHandle());
+                }
                 if (bankDetails.getIsActive() != null) {
                     existingBankDetails.setIsActive(bankDetails.getIsActive());
                 }

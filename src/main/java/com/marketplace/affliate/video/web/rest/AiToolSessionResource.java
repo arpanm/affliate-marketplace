@@ -130,6 +130,9 @@ public class AiToolSessionResource {
                 if (aiToolSession.getIsVideoGenerated() != null) {
                     existingAiToolSession.setIsVideoGenerated(aiToolSession.getIsVideoGenerated());
                 }
+                if (aiToolSession.getIsVideoDownloaded() != null) {
+                    existingAiToolSession.setIsVideoDownloaded(aiToolSession.getIsVideoDownloaded());
+                }
                 if (aiToolSession.getIsActive() != null) {
                     existingAiToolSession.setIsActive(aiToolSession.getIsActive());
                 }

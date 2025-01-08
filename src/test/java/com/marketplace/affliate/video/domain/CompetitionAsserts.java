@@ -50,6 +50,7 @@ public class CompetitionAsserts {
             .satisfies(e -> assertThat(e.getTitle()).as("check title").isEqualTo(actual.getTitle()))
             .satisfies(e -> assertThat(e.getDescription()).as("check description").isEqualTo(actual.getDescription()))
             .satisfies(e -> assertThat(e.getStatus()).as("check status").isEqualTo(actual.getStatus()))
+            .satisfies(e -> assertThat(e.getPaymentStatus()).as("check paymentStatus").isEqualTo(actual.getPaymentStatus()))
             .satisfies(e -> assertThat(e.getIsBlocked()).as("check isBlocked").isEqualTo(actual.getIsBlocked()))
             .satisfies(e -> assertThat(e.getBlockReason()).as("check blockReason").isEqualTo(actual.getBlockReason()))
             .satisfies(e -> assertThat(e.getBlockedBy()).as("check blockedBy").isEqualTo(actual.getBlockedBy()))

@@ -24,6 +24,7 @@
       "isWatched": "Is Watched",
       "isFullyWatched": "Is Fully Watched",
       "isReported": "Is Reported",
+      "reportType": "Report Type",
       "rating": "Rating",
       "comment": "Comment",
       "reportReason": "Report Reason",

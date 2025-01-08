@@ -57,11 +57,11 @@ export const AiToolChatDetail = () => {
           </dt>
           <dd>{aiToolChatEntity.type}</dd>
           <dt>
-            <span id="isFinalVidel">
-              <Translate contentKey="affliateMarketplaceApp.aiToolChat.isFinalVidel">Is Final Videl</Translate>
+            <span id="isFinalVideo">
+              <Translate contentKey="affliateMarketplaceApp.aiToolChat.isFinalVideo">Is Final Video</Translate>
             </span>
           </dt>
-          <dd>{aiToolChatEntity.isFinalVidel ? 'true' : 'false'}</dd>
+          <dd>{aiToolChatEntity.isFinalVideo ? 'true' : 'false'}</dd>
           <dt>
             <span id="isDownloaded">
               <Translate contentKey="affliateMarketplaceApp.aiToolChat.isDownloaded">Is Downloaded</Translate>

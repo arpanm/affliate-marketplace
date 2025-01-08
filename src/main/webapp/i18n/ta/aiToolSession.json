@@ -21,6 +21,7 @@
       "isPaymentLinkGenerated": "Is Payment Link Generated",
       "isPaid": "Is Paid",
       "isVideoGenerated": "Is Video Generated",
+      "isVideoDownloaded": "Is Video Downloaded",
       "isActive": "Is Active",
       "createdBy": "Created By",
       "createdOn": "Created On",

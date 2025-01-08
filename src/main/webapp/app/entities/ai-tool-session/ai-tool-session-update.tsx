@@ -124,6 +124,14 @@ export const AiToolSessionUpdate = () => {
                 type="checkbox"
               />
               <ValidatedField
+                label={translate('affliateMarketplaceApp.aiToolSession.isVideoDownloaded')}
+                id="ai-tool-session-isVideoDownloaded"
+                name="isVideoDownloaded"
+                data-cy="isVideoDownloaded"
+                check
+                type="checkbox"
+              />
+              <ValidatedField
                 label={translate('affliateMarketplaceApp.aiToolSession.isActive')}
                 id="ai-tool-session-isActive"
                 name="isActive"

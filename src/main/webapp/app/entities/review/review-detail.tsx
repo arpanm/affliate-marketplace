@@ -69,6 +69,12 @@ export const ReviewDetail = () => {
           </dt>
           <dd>{reviewEntity.isReported ? 'true' : 'false'}</dd>
           <dt>
+            <span id="reportType">
+              <Translate contentKey="affliateMarketplaceApp.review.reportType">Report Type</Translate>
+            </span>
+          </dt>
+          <dd>{reviewEntity.reportType}</dd>
+          <dt>
             <span id="rating">
               <Translate contentKey="affliateMarketplaceApp.review.rating">Rating</Translate>
             </span>

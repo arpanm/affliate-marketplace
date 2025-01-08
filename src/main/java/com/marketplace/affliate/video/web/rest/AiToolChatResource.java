@@ -133,8 +133,8 @@ public class AiToolChatResource {
                 if (aiToolChat.getType() != null) {
                     existingAiToolChat.setType(aiToolChat.getType());
                 }
-                if (aiToolChat.getIsFinalVidel() != null) {
-                    existingAiToolChat.setIsFinalVidel(aiToolChat.getIsFinalVidel());
+                if (aiToolChat.getIsFinalVideo() != null) {
+                    existingAiToolChat.setIsFinalVideo(aiToolChat.getIsFinalVideo());
                 }
                 if (aiToolChat.getIsDownloaded() != null) {
                     existingAiToolChat.setIsDownloaded(aiToolChat.getIsDownloaded());

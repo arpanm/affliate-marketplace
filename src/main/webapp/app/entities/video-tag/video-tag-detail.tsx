@@ -61,7 +61,7 @@ export const VideoTagDetail = () => {
               <Translate contentKey="affliateMarketplaceApp.videoTag.deletionReason">Deletion Reason</Translate>
             </span>
           </dt>
-          <dd>{videoTagEntity.deletionReason ? 'true' : 'false'}</dd>
+          <dd>{videoTagEntity.deletionReason}</dd>
           <dt>
             <span id="mergedWithTagName">
               <Translate contentKey="affliateMarketplaceApp.videoTag.mergedWithTagName">Merged With Tag Name</Translate>

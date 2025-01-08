@@ -100,6 +100,10 @@ export const AiToolSession = () => {
                   <Translate contentKey="affliateMarketplaceApp.aiToolSession.isVideoGenerated">Is Video Generated</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('isVideoGenerated')} />
                 </th>
+                <th className="hand" onClick={sort('isVideoDownloaded')}>
+                  <Translate contentKey="affliateMarketplaceApp.aiToolSession.isVideoDownloaded">Is Video Downloaded</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('isVideoDownloaded')} />
+                </th>
                 <th className="hand" onClick={sort('isActive')}>
                   <Translate contentKey="affliateMarketplaceApp.aiToolSession.isActive">Is Active</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('isActive')} />
@@ -140,6 +144,7 @@ export const AiToolSession = () => {
                   <td>{aiToolSession.isPaymentLinkGenerated ? 'true' : 'false'}</td>
                   <td>{aiToolSession.isPaid ? 'true' : 'false'}</td>
                   <td>{aiToolSession.isVideoGenerated ? 'true' : 'false'}</td>
+                  <td>{aiToolSession.isVideoDownloaded ? 'true' : 'false'}</td>
                   <td>{aiToolSession.isActive ? 'true' : 'false'}</td>
                   <td>{aiToolSession.createdBy}</td>
                   <td>

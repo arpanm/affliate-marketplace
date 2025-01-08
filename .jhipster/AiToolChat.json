@@ -22,7 +22,7 @@
       "fieldValues": "UserMessage,AiResponse,GeneratedVideo,PaymentRequest,PaymentStatus"
     },
     {
-      "fieldName": "isFinalVidel",
+      "fieldName": "isFinalVideo",
       "fieldType": "Boolean"
     },
     {

@@ -52,6 +52,7 @@ public class AiToolSessionAsserts {
             )
             .satisfies(e -> assertThat(e.getIsPaid()).as("check isPaid").isEqualTo(actual.getIsPaid()))
             .satisfies(e -> assertThat(e.getIsVideoGenerated()).as("check isVideoGenerated").isEqualTo(actual.getIsVideoGenerated()))
+            .satisfies(e -> assertThat(e.getIsVideoDownloaded()).as("check isVideoDownloaded").isEqualTo(actual.getIsVideoDownloaded()))
             .satisfies(e -> assertThat(e.getIsActive()).as("check isActive").isEqualTo(actual.getIsActive()))
             .satisfies(e -> assertThat(e.getCreatedBy()).as("check createdBy").isEqualTo(actual.getCreatedBy()))
             .satisfies(e -> assertThat(e.getCreatedOn()).as("check createdOn").isEqualTo(actual.getCreatedOn()))

@@ -104,9 +104,9 @@ export const AiToolChat = () => {
                   <Translate contentKey="affliateMarketplaceApp.aiToolChat.type">Type</Translate>{' '}
                   <FontAwesomeIcon icon={getSortIconByFieldName('type')} />
                 </th>
-                <th className="hand" onClick={sort('isFinalVidel')}>
-                  <Translate contentKey="affliateMarketplaceApp.aiToolChat.isFinalVidel">Is Final Videl</Translate>{' '}
-                  <FontAwesomeIcon icon={getSortIconByFieldName('isFinalVidel')} />
+                <th className="hand" onClick={sort('isFinalVideo')}>
+                  <Translate contentKey="affliateMarketplaceApp.aiToolChat.isFinalVideo">Is Final Video</Translate>{' '}
+                  <FontAwesomeIcon icon={getSortIconByFieldName('isFinalVideo')} />
                 </th>
                 <th className="hand" onClick={sort('isDownloaded')}>
                   <Translate contentKey="affliateMarketplaceApp.aiToolChat.isDownloaded">Is Downloaded</Translate>{' '}
@@ -152,7 +152,7 @@ export const AiToolChat = () => {
                   <td>
                     <Translate contentKey={`affliateMarketplaceApp.ChatType.${aiToolChat.type}`} />
                   </td>
-                  <td>{aiToolChat.isFinalVidel ? 'true' : 'false'}</td>
+                  <td>{aiToolChat.isFinalVideo ? 'true' : 'false'}</td>
                   <td>{aiToolChat.isDownloaded ? 'true' : 'false'}</td>
                   <td>{aiToolChat.isActive ? 'true' : 'false'}</td>
                   <td>{aiToolChat.createdBy}</td>

@@ -14,6 +14,11 @@
     },
     {
       "fieldName": "status",
+      "fieldType": "CompetitionStatus",
+      "fieldValues": "Draft,Scheduled,Active,Blocked,Paused,ClosedWinnersPending,ClosedWinnersSelected,ClosedWinnersAnnounced"
+    },
+    {
+      "fieldName": "paymentStatus",
       "fieldType": "CompetitionPaymentStatus",
       "fieldValues": "PaymentPendingFromSponsor,PaymentReceivedFromSponsor,PartialPaymentReceivedFromSponsor,PaymentRemittedToWinners"
     },

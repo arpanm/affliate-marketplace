@@ -37,8 +37,8 @@ public class AiToolChat implements Serializable {
     @Column(name = "type")
     private ChatType type;
 
-    @Column(name = "is_final_videl")
-    private Boolean isFinalVidel;
+    @Column(name = "is_final_video")
+    private Boolean isFinalVideo;
 
     @Column(name = "is_downloaded")
     private Boolean isDownloaded;
@@ -129,17 +129,17 @@ public class AiToolChat implements Serializable {
         this.type = type;
     }
 
-    public Boolean getIsFinalVidel() {
-        return this.isFinalVidel;
+    public Boolean getIsFinalVideo() {
+        return this.isFinalVideo;
     }
 
-    public AiToolChat isFinalVidel(Boolean isFinalVidel) {
-        this.setIsFinalVidel(isFinalVidel);
+    public AiToolChat isFinalVideo(Boolean isFinalVideo) {
+        this.setIsFinalVideo(isFinalVideo);
         return this;
     }
 
-    public void setIsFinalVidel(Boolean isFinalVidel) {
-        this.isFinalVidel = isFinalVidel;
+    public void setIsFinalVideo(Boolean isFinalVideo) {
+        this.isFinalVideo = isFinalVideo;
     }
 
     public Boolean getIsDownloaded() {
@@ -261,7 +261,7 @@ public class AiToolChat implements Serializable {
             ", videoUrl='" + getVideoUrl() + "'" +
             ", paymentUrl='" + getPaymentUrl() + "'" +
             ", type='" + getType() + "'" +
-            ", isFinalVidel='" + getIsFinalVidel() + "'" +
+            ", isFinalVideo='" + getIsFinalVideo() + "'" +
             ", isDownloaded='" + getIsDownloaded() + "'" +
             ", isActive='" + getIsActive() + "'" +
             ", createdBy='" + getCreatedBy() + "'" +

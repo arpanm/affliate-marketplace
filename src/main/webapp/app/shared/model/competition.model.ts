@@ -1,12 +1,14 @@
 import dayjs from 'dayjs';
 import { ISponsor } from 'app/shared/model/sponsor.model';
+import { CompetitionStatus } from 'app/shared/model/enumerations/competition-status.model';
 import { CompetitionPaymentStatus } from 'app/shared/model/enumerations/competition-payment-status.model';
 
 export interface ICompetition {
   id?: number;
   title?: string | null;
   description?: string | null;
-  status?: keyof typeof CompetitionPaymentStatus | null;
+  status?: keyof typeof CompetitionStatus | null;
+  paymentStatus?: keyof typeof CompetitionPaymentStatus | null;
   isBlocked?: boolean | null;
   blockReason?: string | null;
   blockedBy?: string | null;

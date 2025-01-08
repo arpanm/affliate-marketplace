@@ -8,7 +8,7 @@ export interface IAiToolChat {
   videoUrl?: string | null;
   paymentUrl?: string | null;
   type?: keyof typeof ChatType | null;
-  isFinalVidel?: boolean | null;
+  isFinalVideo?: boolean | null;
   isDownloaded?: boolean | null;
   isActive?: boolean | null;
   createdBy?: string | null;
@@ -19,7 +19,7 @@ export interface IAiToolChat {
 }
 
 export const defaultValue: Readonly<IAiToolChat> = {
-  isFinalVidel: false,
+  isFinalVideo: false,
   isDownloaded: false,
   isActive: false,
 };

@@ -49,6 +49,9 @@ class BankDetailsResourceIT {
     private static final String DEFAULT_PROOF_URL = "AAAAAAAAAA";
     private static final String UPDATED_PROOF_URL = "BBBBBBBBBB";
 
+    private static final String DEFAULT_UPI_HANDLE = "AAAAAAAAAA";
+    private static final String UPDATED_UPI_HANDLE = "BBBBBBBBBB";
+
     private static final Boolean DEFAULT_IS_ACTIVE = false;
     private static final Boolean UPDATED_IS_ACTIVE = true;
 
@@ -99,6 +102,7 @@ class BankDetailsResourceIT {
             .bankName(DEFAULT_BANK_NAME)
             .ifsc(DEFAULT_IFSC)
             .proofUrl(DEFAULT_PROOF_URL)
+            .upiHandle(DEFAULT_UPI_HANDLE)
             .isActive(DEFAULT_IS_ACTIVE)
             .createdBy(DEFAULT_CREATED_BY)
             .createdOn(DEFAULT_CREATED_ON)
@@ -119,6 +123,7 @@ class BankDetailsResourceIT {
             .bankName(UPDATED_BANK_NAME)
             .ifsc(UPDATED_IFSC)
             .proofUrl(UPDATED_PROOF_URL)
+            .upiHandle(UPDATED_UPI_HANDLE)
             .isActive(UPDATED_IS_ACTIVE)
             .createdBy(UPDATED_CREATED_BY)
             .createdOn(UPDATED_CREATED_ON)
@@ -195,6 +200,7 @@ class BankDetailsResourceIT {
             .andExpect(jsonPath("$.[*].bankName").value(hasItem(DEFAULT_BANK_NAME)))
             .andExpect(jsonPath("$.[*].ifsc").value(hasItem(DEFAULT_IFSC)))
             .andExpect(jsonPath("$.[*].proofUrl").value(hasItem(DEFAULT_PROOF_URL)))
+            .andExpect(jsonPath("$.[*].upiHandle").value(hasItem(DEFAULT_UPI_HANDLE)))
             .andExpect(jsonPath("$.[*].isActive").value(hasItem(DEFAULT_IS_ACTIVE)))
             .andExpect(jsonPath("$.[*].createdBy").value(hasItem(DEFAULT_CREATED_BY)))
             .andExpect(jsonPath("$.[*].createdOn").value(hasItem(DEFAULT_CREATED_ON.toString())))
@@ -219,6 +225,7 @@ class BankDetailsResourceIT {
             .andExpect(jsonPath("$.bankName").value(DEFAULT_BANK_NAME))
             .andExpect(jsonPath("$.ifsc").value(DEFAULT_IFSC))
             .andExpect(jsonPath("$.proofUrl").value(DEFAULT_PROOF_URL))
+            .andExpect(jsonPath("$.upiHandle").value(DEFAULT_UPI_HANDLE))
             .andExpect(jsonPath("$.isActive").value(DEFAULT_IS_ACTIVE))
             .andExpect(jsonPath("$.createdBy").value(DEFAULT_CREATED_BY))
             .andExpect(jsonPath("$.createdOn").value(DEFAULT_CREATED_ON.toString()))
@@ -251,6 +258,7 @@ class BankDetailsResourceIT {
             .bankName(UPDATED_BANK_NAME)
             .ifsc(UPDATED_IFSC)
             .proofUrl(UPDATED_PROOF_URL)
+            .upiHandle(UPDATED_UPI_HANDLE)
             .isActive(UPDATED_IS_ACTIVE)
             .createdBy(UPDATED_CREATED_BY)
             .createdOn(UPDATED_CREATED_ON)
@@ -340,7 +348,8 @@ class BankDetailsResourceIT {
             .accountNo(UPDATED_ACCOUNT_NO)
             .ifsc(UPDATED_IFSC)
             .proofUrl(UPDATED_PROOF_URL)
-            .createdOn(UPDATED_CREATED_ON)
+            .createdBy(UPDATED_CREATED_BY)
+            .updatedBy(UPDATED_UPDATED_BY)
             .updatedOn(UPDATED_UPDATED_ON);
 
         restBankDetailsMockMvc
@@ -378,6 +387,7 @@ class BankDetailsResourceIT {
             .bankName(UPDATED_BANK_NAME)
             .ifsc(UPDATED_IFSC)
             .proofUrl(UPDATED_PROOF_URL)
+            .upiHandle(UPDATED_UPI_HANDLE)
             .isActive(UPDATED_IS_ACTIVE)
             .createdBy(UPDATED_CREATED_BY)
             .createdOn(UPDATED_CREATED_ON)

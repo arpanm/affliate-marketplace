@@ -38,6 +38,9 @@ public class BankDetails implements Serializable {
     @Column(name = "proof_url")
     private String proofUrl;
 
+    @Column(name = "upi_handle")
+    private String upiHandle;
+
     @Column(name = "is_active")
     private Boolean isActive;
 
@@ -138,6 +141,19 @@ public class BankDetails implements Serializable {
 
     public void setProofUrl(String proofUrl) {
         this.proofUrl = proofUrl;
+    }
+
+    public String getUpiHandle() {
+        return this.upiHandle;
+    }
+
+    public BankDetails upiHandle(String upiHandle) {
+        this.setUpiHandle(upiHandle);
+        return this;
+    }
+
+    public void setUpiHandle(String upiHandle) {
+        this.upiHandle = upiHandle;
     }
 
     public Boolean getIsActive() {
@@ -253,6 +269,7 @@ public class BankDetails implements Serializable {
             ", bankName='" + getBankName() + "'" +
             ", ifsc='" + getIfsc() + "'" +
             ", proofUrl='" + getProofUrl() + "'" +
+            ", upiHandle='" + getUpiHandle() + "'" +
             ", isActive='" + getIsActive() + "'" +
             ", createdBy='" + getCreatedBy() + "'" +
             ", createdOn='" + getCreatedOn() + "'" +
